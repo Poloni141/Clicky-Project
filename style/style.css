@@ -1,0 +1,197 @@
+:root {
+    --color-principal: #296BFF;
+    --color-secundario: #001833;
+    --color-background: #d7dde4;
+    --color-blanco: #fff;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    color: #001833;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.poligon {
+    background-color: var(--color-principal);
+    height: 30rem;
+    width: 55%;
+    clip-path: polygon(0 0, 100% 0%, 75% 100%, 0% 100%);
+    z-index: 2;
+}
+
+.banner-container {
+    display: flex;
+    justify-content: start;
+}
+
+/*El video solo se agrega para la entrega del desafio pero no es la idea que siga estando en el proyecto final*/
+
+video {                    
+    position: absolute;
+    height: 30rem;
+    width: 45%;
+    left: 55%;
+
+}
+
+body {
+    background-color: var(--color-background);
+}
+
+header {
+    background-color: var(--color-blanco);
+    padding: 1rem;
+    z-index: 10;
+    box-shadow: 6px 6px 27px 1px rgba(0,0,0,0.73);
+    -webkit-box-shadow: 6px 6px 27px 1px rgba(0,0,0,0.56);
+    -moz-box-shadow: 6px 6px 27px 1px rgba(0,0,0,0.56);
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+}
+
+nav .left-side{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+
+.left-side a {
+    margin-left: 2rem;
+}
+
+header .menu {
+    display: none;
+}
+
+header .title {
+    font-size: 2.5rem;
+    color: var(--color-principal);
+    font-family: 'Montserrat Alternates', sans-serif;
+    cursor: default;
+}
+
+a {
+    font-size: 1.4rem;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+i {
+    color: var(--color-principal);
+    font-size: 1.7rem;
+    margin: 0.7rem;
+    cursor: pointer;
+}
+
+
+.categorie {
+    margin: 2rem 0 2rem 0;
+    width: 97%;
+    height: 15.725rem;
+    border: 1px solid var(--color-secundario);
+    border-radius: 0.2rem;
+    background-color: var(--color-blanco);
+    display: flex;
+    justify-content: start;
+}
+
+img {
+    border-radius: 0.2rem 0 0 0.2rem;
+}
+
+.info {
+    margin: 2rem;
+}
+
+.info p {
+    margin-top: 1.2rem;
+}
+
+.info a {
+    position: relative;
+    top: 5rem;
+}
+
+.info a:hover {
+    color: var(--color-principal);
+}
+
+
+.extras-container {
+    margin: 4rem 0 4rem 0 ;
+    height: 30rem;
+    background-color: var(--color-blanco);
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.divisor {
+    width: 35rem;
+    height: 30rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.divisor div {
+    margin-left: 2rem;
+}
+
+.divisor h3 {
+    line-height: 4rem;
+}
+
+
+#contacto {
+    height: 25rem;
+    background-color: var(--color-secundario);
+}
+
+form {
+    margin-left: 2rem;
+}
+
+form select {
+    margin-bottom: 1rem;
+}
+
+.campos input {
+    display: block;
+    margin-bottom: 1rem;
+}
+
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--color-principal);
+}
+
+footer a, footer p, footer i{
+    color: var(--color-background);
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+footer i{
+    font-size: 1.4rem;
+}
+
+footer .terminos {
+    line-height: 1.5rem;
+    margin: 1rem;
+}
+
+footer .social {
+    margin-right: 3rem;
+    display: flex;
+    justify-content: start;
+}
+

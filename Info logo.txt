@@ -1,0 +1,11 @@
+Logo y colores:
+
+Montserrat Alternates 600 semi bold
+
+Color titulo #296BFF
+Color Background #F5FAFF
+Color texto: #001833
+
+Recursos: FontAwesome
+	  Undraw
+	  Coolors

@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clicky</title>
+
+    <link rel="stylesheet" href="style/style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@600&family=Montserrat:ital,wght@0,300;0,400;0,600;1,400&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/3bf9f8b441.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="left-side">
+                <h1 class="title">Clicky</h1>
+                <a href="">Categorias</a>
+                <a href="#contacto">Contacto</a>
+            </div>
+
+            <div class="menu"> <!--Lista desplegable de las categorias-->
+                <ol>
+                    <li><a href="switches.html">Switches</a></li>
+                    <li><a href="keycaps.html">Keycaps</a></li>
+                    <li><a href="case.html">Case</a></li>
+                    <li><a href="cables.html">Cables</a></li>
+                    <li><a href="estabilizadores.html">Estabilizadores</a></li>
+                    <li><a href="tools.html">Herramientas</a></li>
+                </ol>
+            </div>
+
+            <div class="right-side">
+                <i class="fas fa-shopping-cart"></i>
+                <i class="far fa-user-circle"></i>
+            </div>
+        </nav>
+    </header>
+    
+    <main>
+        <section class="banner-container"> <!--Imagen deslizable con texto arriba (se requiere bootstrap)-->
+            <div class="poligon"><h2>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque magnam sed odio soluta id doloremque, similique ad, dignissimos maxime possimus fuga voluptatum temporibus tenetur excepturi pariatur consequuntur. Dolor, deleniti quia?</h2></div>
+            <video src="media/video.mp4" autoplay loop preload="auto" controls></video>
+            <article class="banner">
+                <img src="" alt="">
+            </article>
+        </section>
+
+        <section class="categories-container"> <!--Categorias-->
+            <div class="center">
+                <!--Por ahora solo se agregaron 3 porque la idea es hacerlo con CSS Grid-->
+                <article class="categorie">
+                    <div class="imagen">
+                        <img src="media/switches.jpg" alt="Switches" height="250px" width="350px">
+                    </div>
+
+                    <div class="info">
+                        <h2>Switches</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas laudantium quaerat quisquam dolorum doloribus. Obcaecati commodi dolorum nostrum consectetur reprehenderit ipsa, sit adipisci repellendus incidunt, veniam quam! Officiis, earum tempora.</p>
+                        <a href="switches.html">Ver mas</a>
+                    </div>
+                </article>
+
+                <article class="categorie">
+                    <div class="imagen">
+                        <img src="media/keycap.jpg" alt="Switches" height="250px" width="350px">
+                    </div>
+
+                    <div class="info">
+                        <h2>Keycaps</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas laudantium quaerat quisquam dolorum doloribus. Obcaecati commodi dolorum nostrum consectetur reprehenderit ipsa, sit adipisci repellendus incidunt, veniam quam! Officiis, earum tempora.</p>
+                        <a href="keycaps.html">Ver mas</a>
+                    </div>
+                </article>
+
+                <article class="categorie">
+                    <div class="imagen">
+                        <img src="media/cable.jpg" alt="Switches" height="250px" width="350px">
+                    </div>
+
+                    <div class="info">
+                        <h2>Cables</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas laudantium quaerat quisquam dolorum doloribus. Obcaecati commodi dolorum nostrum consectetur reprehenderit ipsa, sit adipisci repellendus incidunt, veniam quam! Officiis, earum tempora.</p>
+                        <a href="cables.html">Ver mas</a>
+                    </div>
+                </article>
+                
+                <article></article>
+                <article></article>
+                <article></article>
+            </div>  
+        </section>
+            
+        <section class="extras-container"> <!--Metodos de pago, envio y garantia-->
+            <article class="extras">
+                <div class="divisor">
+                    <div class="svg">
+                        <img src="media/creditcard.svg" alt="Podes pagar con efectivo, con tarjeta de debito o credito" width="300px" height="300px">
+                    </div>
+                    <div>
+                        <h3>Pagos</h3>
+                        <p>Podes pagar de la manera que vos prefieras. Aceptamos efectivo, tarjeta de credito y debito.</p>
+                    </div>
+                </div>
+            </article>
+
+            <article>
+                <div class="divisor">
+                    <div class="svg">
+                        <img src="media/delivery.svg" alt="Podes pagar con efectivo, con tarjeta de debito o credito" width="250px" height="250px">
+                    </div>
+                    <div>
+                        <h3>Envios</h3>
+                        <p>Podes pagar de la manera que vos prefieras. Aceptamos efectivo, tarjeta de credito y debito.</p>
+                    </div>
+                </div>
+            </article>
+
+            <article>
+                <div class="divisor">
+                    <div class="svg">
+                        <img src="media/Support.svg" alt="Podes pagar con efectivo, con tarjeta de debito o credito" width="300px" height="300px">
+                    </div>
+                    <div>
+                        <h3>Soporte</h3>
+                        <p>Podes pagar de la manera que vos prefieras. Aceptamos efectivo, tarjeta de credito y debito.</p>
+                    </div>
+                </div>
+            </article>
+        </section>
+
+        <section id="contacto"> <!--Formulario para consultas-->
+                <h2>Contacto</h2>
+                <form action="#">
+                    <div class="campos">
+                        <input type="text" name="nombre" placeholder="Nombre" required>
+                        <input type="text" name="apellido" placeholder="Apellido" required>
+                        <input type="email" name="email" placeholder="Email" required>
+                        <input type="tel" name="telefono" placeholder="Telefono" required> 
+                    </div>
+                    <!--Por defecto el formulario solicitara un email pero si 
+                    la persona asi lo prefiere puede escoger poner numero de telefono 
+                    en vez de un correo (Con JS segun la opcion seleccionada)-->
+                    
+                    <select name="tipo" id="email-tel"> 
+                        <option value="email">Email</option>
+                        <option value="tel">Telefono</option>
+                    </select>
+
+                    <div class="textArea">
+                        <textarea name="consulta" id="" cols="30" rows="10" placeholder="Escribi aca tu consulta." required></textarea>
+                    </div>
+
+                    <div class="enviar">
+                        <input type="submit" value="Enviar" id="send-btn">
+                        <input type="reset" value="Borrar"  id="reset-btn">
+                        <input type="checkbox" id="cbox">Suscribirse a las noticias
+                    </div>
+                </form>
+
+        </section>
+    </main>
+
+
+    <footer>
+        <div class="terminos"> <!--Terminos y condiciones generales-->
+            <a href="#">Terminos y condiciones</a>
+            <p>Copyright © Clycky by Nicolas Lazaro</p>
+            <p>Lavarden 157 - Parque Patricios - CABA - CP1437</p>
+        </div>
+
+        <div class="social"> <!--Imagenes hipervinculo que llevan a cada red social de la empresa-->
+            <div><i class="fab fa-instagram"></i></div>
+            <div><i class="fab fa-facebook-square"></i></div>
+            <div><i class="fab fa-twitter"></i></div>
+            <div><i class="fab fa-youtube"></i></div>
+        </div>
+    </footer>
+</body>
+</html>
