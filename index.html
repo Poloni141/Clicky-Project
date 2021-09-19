@@ -16,40 +16,39 @@
 <body>
     <header>
         <nav>
-            <div class="left-side">
+            <div class="leftMenu">
                 <h1 class="title">Clicky</h1>
-                <a href="">Categorias</a>
-                <a href="#contacto">Contacto</a>
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="" class="shop">Shop</a>
+                        <ul class="menu">
+                            <li><a href="switches.html">Switches</a></li>
+                            <li><a href="keycaps.html">Keycaps</a></li>
+                            <li><a href="case.html">Case</a></li>
+                            <li><a href="cables.html">Cables</a></li>
+                            <li><a href="estabilizadores.html">Estabilizadores</a></li>
+                            <li><a href="tools.html">Herramientas</a></li>
+                        </ul>
+                    </li>
+
+                    <li><a href="#contacto">Soporte</a></li>
+                </ul>
             </div>
 
-            <div class="menu"> <!--Lista desplegable de las categorias-->
-                <ol>
-                    <li><a href="switches.html">Switches</a></li>
-                    <li><a href="keycaps.html">Keycaps</a></li>
-                    <li><a href="case.html">Case</a></li>
-                    <li><a href="cables.html">Cables</a></li>
-                    <li><a href="estabilizadores.html">Estabilizadores</a></li>
-                    <li><a href="tools.html">Herramientas</a></li>
-                </ol>
-            </div>
-
-            <div class="right-side">
-                <i class="fas fa-shopping-cart"></i>
-                <i class="far fa-user-circle"></i>
+            <div class="registerLogin"> <!--Lista desplegable de las categorias-->
+                <a href="" class="loginBtn">Iniciar sesion</a>
+                <a href="" class="registerBtn">Registrarse</a>
             </div>
         </nav>
     </header>
     
     <main>
-        <section class="banner-container"> <!--Imagen deslizable con texto arriba (se requiere bootstrap)-->
-            <div class="poligon"><h2>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque magnam sed odio soluta id doloremque, similique ad, dignissimos maxime possimus fuga voluptatum temporibus tenetur excepturi pariatur consequuntur. Dolor, deleniti quia?</h2></div>
-            <video src="media/video.mp4" autoplay loop preload="auto" controls></video>
-            <article class="banner">
-                <img src="" alt="">
-            </article>
+        <section class="bannerContainer"> <!--Imagen deslizable con texto arriba (se requiere bootstrap)-->
+            <h2 class="bannerText"></h2>
+            <img src="" alt="" height="" width="">
         </section>
 
-        <section class="categories-container"> <!--Categorias-->
+        <section class="categoriesContainer"> <!--Categorias-->
             <div class="center">
                 <!--Por ahora solo se agregaron 3 porque la idea es hacerlo con CSS Grid-->
                 <article class="categorie">
@@ -87,14 +86,61 @@
                         <a href="cables.html">Ver mas</a>
                     </div>
                 </article>
-                
-                <article></article>
-                <article></article>
-                <article></article>
+
+                <article class="categorie">
+                    <div class="imagen">
+                        <img src="media/cable.jpg" alt="Switches" height="250px" width="350px">
+                    </div>
+
+                    <div class="info">
+                        <h2>Cables</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas laudantium quaerat quisquam dolorum doloribus. Obcaecati commodi dolorum nostrum consectetur reprehenderit ipsa, sit adipisci repellendus incidunt, veniam quam! Officiis, earum tempora.</p>
+                        <a href="cables.html">Ver mas</a>
+                    </div>
+                </article>
+
+                <article class="categorie">
+                    <div class="imagen">
+                        <img src="media/cable.jpg" alt="Switches" height="250px" width="350px">
+                    </div>
+
+                    <div class="info">
+                        <h2>Cables</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas laudantium quaerat quisquam dolorum doloribus. Obcaecati commodi dolorum nostrum consectetur reprehenderit ipsa, sit adipisci repellendus incidunt, veniam quam! Officiis, earum tempora.</p>
+                        <a href="cables.html">Ver mas</a>
+                    </div>
+                </article>
+
+                <article class="categorie">
+                    <div class="imagen">
+                        <img src="media/cable.jpg" alt="Switches" height="250px" width="350px">
+                    </div>
+
+                    <div class="info">
+                        <h2>Cables</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas laudantium quaerat quisquam dolorum doloribus. Obcaecati commodi dolorum nostrum consectetur reprehenderit ipsa, sit adipisci repellendus incidunt, veniam quam! Officiis, earum tempora.</p>
+                        <a href="cables.html">Ver mas</a>
+                    </div>
+                </article>
             </div>  
         </section>
-            
-        <section class="extras-container"> <!--Metodos de pago, envio y garantia-->
+           
+        <section class="clientes"> <!--Algunos comentarios de gente que compro-->
+            <article>
+
+            </article>
+
+            <article>
+
+            </article>
+
+            <article>
+
+            </article>
+        </section>
+
+
+        <section class="extrasContainer"> <!--Metodos de pago, envio y garantia-->
             <article class="extras">
                 <div class="divisor">
                     <div class="svg">
@@ -133,50 +179,84 @@
         </section>
 
         <section id="contacto"> <!--Formulario para consultas-->
+            <div class="formulario">
                 <h2>Contacto</h2>
                 <form action="#">
                     <div class="campos">
-                        <input type="text" name="nombre" placeholder="Nombre" required>
-                        <input type="text" name="apellido" placeholder="Apellido" required>
+                        <input type="text" name="nombre" placeholder="Nombre completo" required>
                         <input type="email" name="email" placeholder="Email" required>
                         <input type="tel" name="telefono" placeholder="Telefono" required> 
                     </div>
-                    <!--Por defecto el formulario solicitara un email pero si 
-                    la persona asi lo prefiere puede escoger poner numero de telefono 
-                    en vez de un correo (Con JS segun la opcion seleccionada)-->
-                    
-                    <select name="tipo" id="email-tel"> 
-                        <option value="email">Email</option>
-                        <option value="tel">Telefono</option>
-                    </select>
 
                     <div class="textArea">
-                        <textarea name="consulta" id="" cols="30" rows="10" placeholder="Escribi aca tu consulta." required></textarea>
+                        <textarea name="consulta" id="" cols="30" rows="10" placeholder="Escriba aqui su consulta..." required></textarea>
                     </div>
 
                     <div class="enviar">
-                        <input type="submit" value="Enviar" id="send-btn">
-                        <input type="reset" value="Borrar"  id="reset-btn">
+                        <input type="submit" value="Enviar" id="sendBtn">
                         <input type="checkbox" id="cbox">Suscribirse a las noticias
                     </div>
                 </form>
+            </div>
 
+            <div class="sideBarForm"> <!--Esto va estar del lado derecho como informacion adicional al costado del formulario-->
+                <h2>Hola</h2>
+                <p>Nos complace poder ayudarte pero para eso primero porfavor completa el formulario y te estaremos respondiendo dentro de las 24 horas.
+                </p>
+                <p>Clicky@gmail.com</p>
+                <p>+54 11-6515-7749</p>
+                <p>Av. Lavarden 157 CABA</p>
+            </div>
         </section>
     </main>
 
 
     <footer>
-        <div class="terminos"> <!--Terminos y condiciones generales-->
-            <a href="#">Terminos y condiciones</a>
-            <p>Copyright © Clycky by Nicolas Lazaro</p>
-            <p>Lavarden 157 - Parque Patricios - CABA - CP1437</p>
+        <div class="upFooter">
+            <div class="company"> 
+                <ul>
+                    <li><h4>Compañia</h4></li>
+                    <li><a href="#">Sobre nosotros</a></li>
+                    <li><a href="#">Galeria</a></li>
+                    <li><a href="#">Trabajos</a></li>
+                    <li><a href="#">Contacto</a></li>
+                </ul>
+            </div>
+
+            <div class="soporte"> 
+                <ul>
+                    <li><h4>Soporte</h4></li>
+                    <li><a href="#">Tutoriales</a></li>
+                    <li><a href="#">Soporte tecnico</a></li>
+                    <li><a href="#">Garantia</a></li>
+                </ul>
+            </div>
+
+            <div class="legal"> 
+                <ul>
+                    <li><h4>Legal</h4></li>
+                    <li><a href="#">Cookies</a></li>
+                    <li><a href="#">Politicas</a></li>
+                    <li><a href="#">Terminos</a></li>
+                </ul>
+            </div>
+
+            <div class="aplicacion"> 
+                <!--Aca van los svg para playstore y appstore-->
+            </div>
         </div>
 
-        <div class="social"> <!--Imagenes hipervinculo que llevan a cada red social de la empresa-->
-            <div><i class="fab fa-instagram"></i></div>
-            <div><i class="fab fa-facebook-square"></i></div>
-            <div><i class="fab fa-twitter"></i></div>
-            <div><i class="fab fa-youtube"></i></div>
+        <div>
+            <div>
+                <p>© 2021 Clicky Ar. All rights reserved</p>
+            </div>
+
+            <div class="social"> <!--Imagenes hipervinculo que llevan a cada red social de la empresa-->
+                <div><i class="fab fa-instagram"></i></div>
+                <div><i class="fab fa-facebook-square"></i></div>
+                <div><i class="fab fa-twitter"></i></div>
+                <div><i class="fab fa-youtube"></i></div>
+            </div>
         </div>
     </footer>
 </body>

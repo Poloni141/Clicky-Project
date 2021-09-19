@@ -3,8 +3,9 @@ Logo y colores:
 Montserrat Alternates 600 semi bold
 
 Color titulo #296BFF
-Color Background #F5FAFF
-Color texto: #001833
+Color Background #F5FAFF - #F4F5F7
+Color texto: #001833 - 000710
+Color Input:  #296BFF 20% <- Aplica para place input y botones
 
 Recursos: FontAwesome
 	  Undraw

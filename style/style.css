@@ -1,7 +1,8 @@
 :root {
     --color-principal: #296BFF;
+    --color-principalTrans: rgba(41, 107, 255, 0.2);
     --color-secundario: #001833;
-    --color-background: #d7dde4;
+    --color-background: #F4F5F7;
     --color-blanco: #fff;
 }
 
@@ -13,29 +14,6 @@
     font-family: 'Montserrat', sans-serif;
 }
 
-.poligon {
-    background-color: var(--color-principal);
-    height: 30rem;
-    width: 55%;
-    clip-path: polygon(0 0, 100% 0%, 75% 100%, 0% 100%);
-    z-index: 2;
-}
-
-.banner-container {
-    display: flex;
-    justify-content: start;
-}
-
-/*El video solo se agrega para la entrega del desafio pero no es la idea que siga estando en el proyecto final*/
-
-video {                    
-    position: absolute;
-    height: 30rem;
-    width: 45%;
-    left: 55%;
-
-}
-
 body {
     background-color: var(--color-background);
 }
@@ -44,25 +22,25 @@ header {
     background-color: var(--color-blanco);
     padding: 1rem;
     z-index: 10;
-    box-shadow: 6px 6px 27px 1px rgba(0,0,0,0.73);
-    -webkit-box-shadow: 6px 6px 27px 1px rgba(0,0,0,0.56);
-    -moz-box-shadow: 6px 6px 27px 1px rgba(0,0,0,0.56);
+}
+
+li {
+    display: inline-block;
+    margin-left: 1.4rem;
 }
 
 nav {
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 
-nav .left-side{
+nav .leftMenu{
     display: flex;
     justify-content: start;
     align-items: center;
 }
 
-.left-side a {
-    margin-left: 2rem;
-}
 
 header .menu {
     display: none;
@@ -72,11 +50,35 @@ header .title {
     font-size: 2.5rem;
     color: var(--color-principal);
     font-family: 'Montserrat Alternates', sans-serif;
+    margin-left: 2rem;
     cursor: default;
 }
 
+.registerLogin {
+    margin-right: 2rem;
+}
+
+.registerLogin a{
+    font-size: 0.8rem;
+    margin: 0.4rem
+}
+
+.loginBtn {
+    color: var(--color-principal);
+    padding: 0.8rem;
+    border-radius: 6px;
+    background-color: var(--color-principalTrans);
+}
+
+.registerBtn {
+    color: var(--color-blanco);
+    padding: 0.8rem;
+    background-color: var(--color-principal);
+    border-radius: 6px;
+}
+
 a {
-    font-size: 1.4rem;
+    font-size: 1rem;
     font-weight: 600;
     text-decoration: none;
 }
@@ -122,7 +124,7 @@ img {
 }
 
 
-.extras-container {
+.extrasContainer {
     margin: 4rem 0 4rem 0 ;
     height: 30rem;
     background-color: var(--color-blanco);
