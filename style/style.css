@@ -44,6 +44,15 @@ nav .leftMenu{
 
 header .menu {
     display: none;
+    position: absolute;
+}
+
+li .shop {
+    position: relative;
+}
+
+ul li:hover ul { /* Aca falta corregir como se muestra cuando se hace el hover*/
+    display: block;
 }
 
 header .title {
