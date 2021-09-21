@@ -18,6 +18,13 @@ body {
     background-color: var(--color-background);
 }
 
+.categoriesContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
 header {
     background-color: var(--color-blanco);
     padding: 1rem;
