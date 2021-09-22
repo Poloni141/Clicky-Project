@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clicky</title>
+
+    <link rel="stylesheet" href="style/style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@600&family=Montserrat:ital,wght@0,300;0,400;0,600;1,400&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/3bf9f8b441.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="leftMenu">
+                <h1 class="title">Clicky</h1>
+                <ul>
+                    <li class="listInline"><a href="index.html">Inicio</a></li>
+                    <li class="listInline"><a href="" class="shop">Shop</a>
+                        <ul class="menu">
+                            <li><a href="switches.html">Switches</a></li>
+                            <li><a href="keycaps.html">Keycaps</a></li>
+                            <li><a href="cables.html">Cables</a></li>
+                            <li><a href="keyboards.html">Teclados</a></li>
+                            <li><a href="case.html">Cases</a></li>
+                            <li><a href="tools.html">Herramientas</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="listInline"><a href="#contacto">Soporte</a></li>
+                </ul>
+            </div>
+
+            <div class="registerLogin"> <!--Lista desplegable de las categorias-->
+                <a href="login.html" class="loginBtn">Iniciar sesion</a>
+                <a href="#" class="registerBtn">Registrarse</a>
+            </div>
+        </nav>
+    </header>
+    
+    <main>
+        <section class="bannerContainer"> <!--Imagen deslizable con texto arriba (se requiere bootstrap)-->
+            <h2 class="bannerText">Personalizacion</h2>
+            <p>En Clicky nos especializamos en armar teclados mecanicos de la mejor calidad y con el diseño que vos buscas.</p>
+            <img src="media/Baner.jpg" alt="baner de personalizacion" width="100%"> <!--Editado con PS pero igual hay que hacerlo responsive-->
+        </section>
+
+        <section class="categoriesContainer"> <!--Categorias-->
+                <!--La idea es hacerlo con CSS Grid-->
+                <article class="categorie">
+                    <div class="imagen">
+                        <img src="media/switches.jpg" alt="Switches" height="250px" width="350px">
+                    </div>
+
+                    <div class="info">
+                        <h2>Switches</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas laudantium quaerat quisquam dolorum doloribus. Obcaecati commodi dolorum nostrum consectetur reprehenderit ipsa, sit adipisci repellendus incidunt, veniam quam! Officiis, earum tempora.</p>
+                        <a href="switches.html">Ver mas</a>
+                    </div>
+                </article>
+
+                <article class="categorie">
+                    <div class="imagen">
+                        <img src="media/keycaps1.png" alt="Switches" height="250px" width="350px">
+                    </div>
+
+                    <div class="info">
+                        <h2>Keycaps</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas laudantium quaerat quisquam dolorum doloribus. Obcaecati commodi dolorum nostrum consectetur reprehenderit ipsa, sit adipisci repellendus incidunt, veniam quam! Officiis, earum tempora.</p>
+                        <a href="keycaps.html">Ver mas</a>
+                    </div>
+                </article>
+
+                <article class="categorie">
+                    <div class="imagen">
+                        <img src="media/cable.jpg" alt="Switches" height="250px" width="350px">
+                    </div>
+
+                    <div class="info">
+                        <h2>Cables</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas laudantium quaerat quisquam dolorum doloribus. Obcaecati commodi dolorum nostrum consectetur reprehenderit ipsa, sit adipisci repellendus incidunt, veniam quam! Officiis, earum tempora.</p>
+                        <a href="cables.html">Ver mas</a>
+                    </div>
+                </article>
+
+                <article class="categorie">
+                    <div class="imagen">
+                        <img src="media/teclado.jpg" alt="Switches" height="250px" width="350px">
+                    </div>
+
+                    <div class="info">
+                        <h2>Teclados</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas laudantium quaerat quisquam dolorum doloribus. Obcaecati commodi dolorum nostrum consectetur reprehenderit ipsa, sit adipisci repellendus incidunt, veniam quam! Officiis, earum tempora.</p>
+                        <a href="keyboards.html">Ver mas</a>
+                    </div>
+                </article>
+
+                <article class="categorie">
+                    <div class="imagen">
+                        <img src="media/case.jpg" alt="Switches" height="250px" width="350px">
+                    </div>
+
+                    <div class="info">
+                        <h2>Cases</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas laudantium quaerat quisquam dolorum doloribus. Obcaecati commodi dolorum nostrum consectetur reprehenderit ipsa, sit adipisci repellendus incidunt, veniam quam! Officiis, earum tempora.</p>
+                        <a href="case.html">Ver mas</a>
+                    </div>
+                </article>
+
+                <article class="categorie">
+                    <div class="imagen">
+                        <img src="media/herramientas.jpg" alt="Herramientas" height="250px" width="350px">
+                    </div>
+
+                    <div class="info">
+                        <h2>Herramientas</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas laudantium quaerat quisquam dolorum doloribus. Obcaecati commodi dolorum nostrum consectetur reprehenderit ipsa, sit adipisci repellendus incidunt, veniam quam! Officiis, earum tempora.</p>
+                        <a href="tools.html">Ver mas</a>
+                    </div>
+                </article>
+        </section>
+           
+        <section class="cardsContainer"> <!--Algunos comentarios de gente que compro. Tambien con CSS grid-->
+            <div class="sectionTitle">
+                <h2>Nuestos clientes</h2>
+            </div>
+
+            <article class="clientCard">
+                <div class="comentary">
+                    <p></p>
+                </div>
+
+                <div class="clientProfile">
+                    <p></p>
+                    <p></p>
+                </div>
+            </article>
+
+            <article class="clientCard">
+                <div class="comentary">
+                    <p></p>
+                </div>
+
+                <div class="clientProfile">
+                    <p></p>
+                    <p></p>
+                </div>
+            </article>
+
+            <article class="clientCard">
+                <div class="comentary">
+                    <p></p>
+                </div>
+
+                <div class="clientProfile">
+                    <p></p>
+                    <p></p>
+                </div>
+            </article>
+        </section>
+
+
+        <section class="extrasContainer"> <!--Metodos de pago, envio y garantia-->
+            <article class="extras">
+                <div class="divisor">
+                    <div class="svg">
+                        <img src="media/creditcard.svg" alt="Podes pagar con efectivo, con tarjeta de debito o credito" width="240px" height="220px">
+                    </div>
+                    <div>
+                        <h3>Pagos</h3>
+                        <p>Podes pagar de la manera que vos prefieras. Aceptamos efectivo, tarjeta de credito y debito.</p>
+                    </div>
+                </div>
+            </article>
+
+            <article>
+                <div class="divisor">
+                    <div class="svg">
+                        <img src="media/delivery.svg" alt="Podes pagar con efectivo, con tarjeta de debito o credito" width="240px" height="220px">
+                    </div>
+                    <div>
+                        <h3>Envios</h3>
+                        <p>Podes pagar de la manera que vos prefieras. Aceptamos efectivo, tarjeta de credito y debito.</p>
+                    </div>
+                </div>
+            </article>
+
+            <article>
+                <div class="divisor"> <!--Cambiar estos nombres ya que es diferente al modelo-->
+                    <div class="svg">
+                        <img src="media/Support.svg" alt="Podes pagar con efectivo, con tarjeta de debito o credito" width="240px" height="220px">
+                    </div>
+                    <div>
+                        <h3>Soporte</h3>
+                        <p>Podes pagar de la manera que vos prefieras. Aceptamos efectivo, tarjeta de credito y debito.</p>
+                    </div>
+                </div>
+            </article>
+        </section>
+
+        <section id="contacto"> <!--Formulario para consultas-->
+                <div class="formulario">
+                    <h2>Contacto</h2>
+                    <form action="#">
+                        <div class="campos">
+                            <input type="text" name="nombre" placeholder="Nombre completo" required>
+                            <input type="email" name="email" placeholder="Email" required>
+                            <input type="tel" name="telefono" placeholder="Telefono" required> 
+                        </div>
+
+                        <div class="textArea">
+                            <textarea name="consulta" id="" cols="30" rows="10" placeholder="Escriba aqui su consulta..." required></textarea>
+                        </div>
+
+                        <div class="enviar">
+                            <input type="submit" value="Enviar" id="sendBtn">
+                            <input type="checkbox" id="cbox">Suscribirse a las noticias
+                        </div>
+                    </form>
+                </div>
+
+                <div class="sideBarForm"> <!--Esto va estar del lado derecho como informacion adicional al costado del formulario-->
+                    <h2>Hola</h2>
+                    <p>Nos complace poder ayudarte pero para eso primero porfavor completa el formulario y te estaremos respondiendo dentro de las 24 horas.
+                    </p>
+                    <p>Clicky@gmail.com</p>
+                    <p>+54 011-6515-7749</p>
+                    <p>Av. Lavarden 157 CABA</p>
+                </div>
+        </section>
+    </main>
+
+
+    <footer>
+        <div class="upFooter">
+            <div class="company"> 
+                <ul>
+                    <li><h4>Compañia</h4></li>
+                    <li><a href="#">Sobre nosotros</a></li>
+                    <li><a href="#">Galeria</a></li>
+                    <li><a href="#">Trabajos</a></li>
+                    <li><a href="#">Contacto</a></li>
+                </ul>
+            </div>
+
+            <div class="soporte"> 
+                <ul>
+                    <li><h4>Soporte</h4></li>
+                    <li><a href="#">Tutoriales</a></li>
+                    <li><a href="#">Soporte tecnico</a></li>
+                    <li><a href="#">Garantia</a></li>
+                </ul>
+            </div>
+
+            <div class="legal"> 
+                <ul>
+                    <li><h4>Legal</h4></li>
+                    <li><a href="#">Cookies</a></li>
+                    <li><a href="#">Politicas</a></li>
+                    <li><a href="#">Terminos</a></li>
+                </ul>
+            </div>
+
+            <div class="aplicacion"> 
+                <!--Aca van los svg para playstore y appstore-->
+            </div>
+        </div>
+
+        <div>
+            <div>
+                <p>© 2021 Clicky Ar. All rights reserved</p>
+            </div>
+
+            <div class="social"> <!--Imagenes hipervinculo que llevan a cada red social de la empresa-->
+                <div><i class="fab fa-instagram"></i></div>
+                <div><i class="fab fa-facebook-square"></i></div>
+                <div><i class="fab fa-twitter"></i></div>
+                <div><i class="fab fa-youtube"></i></div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

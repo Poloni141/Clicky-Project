@@ -31,9 +31,10 @@ header {
     z-index: 10;
 }
 
-li {
+.listInline {
     display: inline-block;
     margin-left: 1.4rem;
+    list-style: none;
 }
 
 nav {
@@ -58,8 +59,22 @@ li .shop {
     position: relative;
 }
 
+ul .menu {
+    background-color: var(--color-blanco);
+    left: 260px;
+    list-style-type: none;
+    border: 1px solid var(--color-background);
+}
+
+.menu li {
+    padding: 15px;
+}
+
 ul li:hover ul { /* Aca falta corregir como se muestra cuando se hace el hover*/
-    display: block;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: stretch;
 }
 
 header .title {
@@ -167,12 +182,23 @@ img {
 
 
 #contacto {
+    display: flex;
+    flex-direction: row;
     height: 25rem;
-    background-color: var(--color-secundario);
+    background-color: var(--color-blanco);
+}
+
+.sideBarForm {
+    background-color: var(--color-principal);
+    width: 50%;
+}
+
+.formulario {
+    width: 50%;
 }
 
 form {
-    margin-left: 2rem;
+    margin-left: 5rem;
 }
 
 form select {
@@ -185,12 +211,21 @@ form select {
 }
 
 
+
+
+/* En progreso de cambio*/
 footer {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: var(--color-principal);
+    display: block;
+    background-color: var(--color-secundario);
 }
+
+.upFooter {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
 
 footer a, footer p, footer i{
     color: var(--color-background);
