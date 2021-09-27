@@ -14,6 +14,7 @@
     font-family: 'Montserrat', sans-serif;
 }
 
+
 body {
     background-color: var(--color-background);
 }
@@ -127,14 +128,17 @@ i {
     width: 97%;
     height: 15.725rem;
     border: 1px solid var(--color-secundario);
-    border-radius: 0.2rem;
+    border-radius: 6px;
     background-color: var(--color-blanco);
     display: flex;
     justify-content: start;
+    -webkit-box-shadow: 3px 6px 5px -1px rgba(0,0,0,0.21);
+    -moz-box-shadow: 3px 6px 5px -1px rgba(0,0,0,0.21);
+    box-shadow: 3px 6px 5px -1px rgba(0,0,0,0.21);
 }
 
-img {
-    border-radius: 0.2rem 0 0 0.2rem;
+.categorie img {
+    border-radius: 6px 0 0 6px;
 }
 
 .info {
@@ -146,8 +150,13 @@ img {
 }
 
 .info a {
+    font-size: 0.85rem;
+    color: var(--color-principal);
+    padding: 0.6rem;
+    border-radius: 6px;
+    background-color: var(--color-principalTrans);
     position: relative;
-    top: 5rem;
+    top: 70px;
 }
 
 .info a:hover {
@@ -156,35 +165,43 @@ img {
 
 
 .extrasContainer {
-    margin: 4rem 0 4rem 0 ;
-    height: 30rem;
-    background-color: var(--color-blanco);
+    margin: 64px 0 64px 0 ;
     display: flex;
     align-items: center;
     justify-content: space-evenly;
 }
 
-.divisor {
-    width: 35rem;
-    height: 30rem;
+.card {
+    background-color: var(--color-blanco);
+    width: 500px;
+    height: 400px;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
+    -webkit-box-shadow: 3px 6px 5px -1px rgba(0,0,0,0.21);
+    -moz-box-shadow: 3px 6px 5px -1px rgba(0,0,0,0.21);
+    box-shadow: 3px 6px 5px -1px rgba(0,0,0,0.21);
 }
 
-.divisor div {
-    margin-left: 2rem;
+.cardText {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 30px;
+    width: 300px;
 }
 
-.divisor h3 {
-    line-height: 4rem;
+.cardText h3{
+    margin-bottom: 20px;
 }
 
 
 #contacto {
     display: flex;
     flex-direction: row;
-    height: 25rem;
+    height: 600px;
     background-color: var(--color-blanco);
 }
 
@@ -205,15 +222,39 @@ form select {
     margin-bottom: 1rem;
 }
 
+input {
+    appearance: none;
+}
+
 .campos input {
     display: block;
-    margin-bottom: 1rem;
+    margin: 20px 0;
+    width: 400px;
+    border-style: none;
+}
+
+.textArea textarea {
+    width: 400px;
+}
+
+input, textarea {
+    border: none;
+    background-color: var(--color-principalTrans);
+    border-radius: 6px;
+    padding: 16px;
+}
+
+#sendBtn {
+    border: none;
+    color: var(--color-blanco);
+    padding: 10px 20px 10px 20px;
+    background-color: var(--color-principal);
+    border-radius: 6px;
+    margin: 16px 0;
+    cursor: pointer;
 }
 
 
-
-
-/* En progreso de cambio*/
 footer {
     display: block;
     background-color: var(--color-secundario);
@@ -224,13 +265,28 @@ footer {
     flex-direction: row;
     justify-content: space-evenly;
     align-items: center;
+    padding: 60px;
+}
+
+.upFooter h4 {
+    margin-bottom: 20px;
+    color: var(--color-blanco);
+}
+
+
+.downFooter{
+    border-top: 1px solid var(--color-principalTrans);
+    padding: 20px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
 }
 
 
 footer a, footer p, footer i{
-    color: var(--color-background);
+    color: var(--color-blanco);
     font-size: 1rem;
-    font-weight: 600;
+    font-weight: 400;
 }
 
 footer i{
@@ -247,4 +303,3 @@ footer .social {
     display: flex;
     justify-content: start;
 }
-
