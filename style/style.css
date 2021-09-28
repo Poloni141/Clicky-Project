@@ -1,7 +1,7 @@
 :root {
     --color-principal: #296BFF;
     --color-principalTrans: rgba(41, 107, 255, 0.2);
-    --color-secundario: #001833;
+    --color-secundario: #000710;
     --color-background: #F4F5F7;
     --color-blanco: #fff;
 }
@@ -200,7 +200,6 @@ i {
 
 #contacto {
     display: flex;
-    flex-direction: row;
     height: 600px;
     background-color: var(--color-blanco);
 }
@@ -212,18 +211,16 @@ i {
 
 .formulario {
     width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
-form {
-    margin-left: 5rem;
-}
 
-form select {
-    margin-bottom: 1rem;
-}
-
-input {
-    appearance: none;
+::placeholder {
+    font-weight: 600;
+    color: var(--color-principal);
 }
 
 .campos input {
@@ -242,6 +239,7 @@ input, textarea {
     background-color: var(--color-principalTrans);
     border-radius: 6px;
     padding: 16px;
+    outline: none;
 }
 
 #sendBtn {
@@ -252,6 +250,38 @@ input, textarea {
     border-radius: 6px;
     margin: 16px 0;
     cursor: pointer;
+}
+
+
+.sideBarForm {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.sideBarForm div {
+    width: 700px;
+    height: 500px;
+}
+
+.sideBarForm h2{
+    font-size: 3.8rem;
+    color: var(--color-blanco);
+}
+
+.sideBarForm p{
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: var(--color-blanco);
+}
+
+p span {
+    display: block;
+    position: relative;
+    top: 190px;
+    margin: 30px 0 0 0;
+    color: var(--color-blanco);
 }
 
 
@@ -302,4 +332,8 @@ footer .social {
     margin-right: 3rem;
     display: flex;
     justify-content: start;
+}
+
+footer li {
+    list-style-type: none;
 }
