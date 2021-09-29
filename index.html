@@ -46,14 +46,13 @@
         <section class="bannerContainer"> <!--Imagen deslizable con texto arriba (se requiere bootstrap)-->
             <h2 class="bannerText">Personalizacion</h2>
             <p>En Clicky nos especializamos en armar teclados mecanicos de la mejor calidad y con el diseño que vos buscas.</p>
-            <img src="media/Baner.jpg" alt="baner de personalizacion" width="100%"> <!--Editado con PS pero igual hay que hacerlo responsive-->
         </section>
 
         <section class="categoriesContainer"> <!--Categorias-->
                 <!--La idea es hacerlo con CSS Grid-->
                 <article class="categorie">
                     <div class="imagen">
-                        <img src="media/switches.jpg" alt="Switches" height="250px" width="350px">
+                        <img src="media/switches.jpg" alt="Switches" height="100%" width="350px">
                     </div>
 
                     <div class="info">
@@ -65,7 +64,7 @@
 
                 <article class="categorie">
                     <div class="imagen">
-                        <img src="media/keycaps1.png" alt="Switches" height="250px" width="350px">
+                        <img src="media/keycaps1.png" alt="Switches" height="100%" width="350px">
                     </div>
 
                     <div class="info">
@@ -77,7 +76,7 @@
 
                 <article class="categorie">
                     <div class="imagen">
-                        <img src="media/cable.jpg" alt="Switches" height="250px" width="350px">
+                        <img src="media/cable.jpg" alt="Switches" height="100%" width="350px">
                     </div>
 
                     <div class="info">
@@ -89,7 +88,7 @@
 
                 <article class="categorie">
                     <div class="imagen">
-                        <img src="media/teclado.jpg" alt="Switches" height="250px" width="350px">
+                        <img src="media/teclado.jpg" alt="Switches" height="100%" width="350px">
                     </div>
 
                     <div class="info">
@@ -101,7 +100,7 @@
 
                 <article class="categorie">
                     <div class="imagen">
-                        <img src="media/case.jpg" alt="Switches" height="250px" width="350px">
+                        <img src="media/case.jpg" alt="Switches" height="100%" width="350px">
                     </div>
 
                     <div class="info">
@@ -113,7 +112,7 @@
 
                 <article class="categorie">
                     <div class="imagen">
-                        <img src="media/herramientas.jpg" alt="Herramientas" height="250px" width="350px">
+                        <img src="media/herramientas.jpg" alt="Herramientas" height="100%" width="350px">
                     </div>
 
                     <div class="info">
@@ -124,41 +123,57 @@
                 </article>
         </section>
            
-        <section class="cardsContainer"> <!--Algunos comentarios de gente que compro. Tambien con CSS grid-->
+        <section class="cardsContainer"> <!--CSS grid-->
             <div class="sectionTitle">
                 <h2>Nuestos clientes</h2>
             </div>
 
-            <article class="clientCard">
+            <article class="clientCard card1">
                 <div class="comentary">
-                    <p></p>
+                    <p>Quede fascinada con la calidad de materiales.</p>
                 </div>
 
                 <div class="clientProfile">
-                    <p></p>
-                    <p></p>
+                    <img src="media/profile1.jpeg" width="55px" height="55px">
+                    <p>Micaela Onfori</p>
                 </div>
             </article>
 
-            <article class="clientCard">
+            <article class="clientCard card2">
                 <div class="comentary">
-                    <p></p>
+                    <p>Pocas veces uno se encuentra con paginas que vendan tan buenos productos.</p>
                 </div>
 
                 <div class="clientProfile">
-                    <p></p>
-                    <p></p>
+                    <div>
+                        <img src="media/profile2.jpg" width="55px" height="55px">
+                    </div>
+
+                    <div>
+                        <p>Agustin Maye</p>
+                    </div>
                 </div>
             </article>
 
-            <article class="clientCard">
+            <article class="clientCard card3">
                 <div class="comentary">
-                    <p></p>
+                    <p>Muy buena atencion y calidad de atencion post-venta.</p>
                 </div>
 
                 <div class="clientProfile">
-                    <p></p>
-                    <p></p>
+                    <img src="media/profile3.jpeg" width="55px" height="55px">
+                    <p>Juan Molinardi</p>
+                </div>
+            </article>
+
+            <article class="clientCard card4">
+                <div class="comentary">
+                    <p>Siempre me atendieron muy bien y dispuestos a ayudar con todo!.</p>
+                </div>
+
+                <div class="clientProfile">
+                    <img src="media/profile4.jpg" width="55px" height="55px">
+                    <p>Agustin Cedernoso</p>
                 </div>
             </article>
         </section>
@@ -223,9 +238,9 @@
                         <h2>Hola !</h2>
                         <p>Nos complace poder ayudarte pero necesitamos completes el formulario y te estaremos respondiendo dentro de las 24 horas.
                         </p>
-                        <p><span>Clicky@gmail.com</span></p>
-                        <p><span>+54 011-6515-7749</span></p>
-                        <p><span>Av. Lavarden 157 CABA</span></p>
+                        <p><span><i class="far fa-envelope"></i>Clicky@gmail.com</span></p>
+                        <p><span><i class="fas fa-phone"></i>+54 011-6515-7749</span></p>
+                        <p><span><i class="far fa-map"></i>Av. Lavarden 157 CABA</span></p>
                     </div>
                 </div>
         </section>
@@ -281,7 +296,7 @@
                 <div><i class="fab fa-instagram"></i></div>
                 <div><i class="fab fa-facebook-square"></i></div>
                 <div><i class="fab fa-twitter"></i></div>
-                <div><i class="fab fa-youtube"></i></div>
+                <div><a href="https://github.com/Poloni141/Clicky-Project"><i class="fab fa-github"></i></a></div>
             </div>
         </div>
     </footer>
