@@ -14,8 +14,6 @@
     font-family: 'Montserrat', sans-serif;
 }
 
-
-
 body {
     background-color: var(--color-background);
 }
@@ -29,13 +27,14 @@ body {
 
 header {
     background-color: var(--color-blanco);
-    padding: 1rem;
+    padding: 16px;
     z-index: 10;
+    width: 100%;
 }
 
 .listInline {
     display: inline-block;
-    margin-left: 1.4rem;
+    margin-left: 22.4px;
     list-style: none;
 }
 
@@ -79,33 +78,37 @@ ul li:hover ul { /* Aca falta corregir como se muestra cuando se hace el hover*/
     align-items: stretch;
 }
 
+nav .sideMenu {
+    display: none;
+}
+
 header .title {
     font-size: 2.5rem;
     color: var(--color-principal);
     font-family: 'Montserrat Alternates', sans-serif;
-    margin-left: 2rem;
+    margin-left: 32px;
     cursor: default;
 }
 
 .registerLogin {
-    margin-right: 2rem;
+    margin-right: 32px;
 }
 
 .registerLogin a{
     font-size: 0.8rem;
-    margin: 0.4rem
+    margin: 6.4px;
 }
 
 .loginBtn {
     color: var(--color-principal);
-    padding: 0.8rem;
+    padding: 12.8px;
     border-radius: 6px;
     background-color: var(--color-principalTrans);
 }
 
 .registerBtn {
     color: var(--color-blanco);
-    padding: 0.8rem;
+    padding: 12.8px;
     background-color: var(--color-principal);
     border-radius: 6px;
 }
@@ -119,7 +122,7 @@ a {
 i {
     color: var(--color-principal);
     font-size: 1.7rem;
-    margin: 0.7rem;
+    margin: 11.2px;
     cursor: pointer;
 }
 
@@ -150,9 +153,9 @@ i {
 }
 
 .categorie {
-    margin: 2rem 0 2rem 0;
+    margin: 32px 0 32px 0;
     width: 97%;
-    height: 15.725rem;
+    height: 251.6px;
     
     border-radius: 6px;
     background-color: var(--color-blanco);
@@ -165,20 +168,22 @@ i {
 
 .categorie img {
     border-radius: 6px 0 0 6px;
+    height: 100%;
+    width: 350px;
 }
 
 .info {
-    margin: 2rem;
+    margin: 32px;
 }
 
 .info p {
-    margin-top: 1.2rem;
+    margin-top: 19.2px;
 }
 
 .info a {
     font-size: 0.85rem;
     color: var(--color-principal);
-    padding: 0.6rem;
+    padding: 9.6px;
     border-radius: 6px;
     background-color: var(--color-principalTrans);
     position: relative;
@@ -195,6 +200,11 @@ i {
     display: flex;
     align-items: center;
     justify-content: space-evenly;
+}
+
+.extrasContainer img {
+    width: 200px;
+    height: 220px;
 }
 
 .card {
@@ -224,12 +234,19 @@ i {
     margin-bottom: 20px;
 }
 
+.comentarys {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
 
 .cardsContainer {
-    margin: 70px 0 120px 0;
+    margin: 70px 0 70px 0;
+    width: 70%;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: 60px auto;
+    grid-template-rows: 90px auto;
     grid-column-gap: 20px;
     grid-row-gap: 20px;
     grid-template-areas: "sectionTitle sectionTitle sectionTitle sectionTitle"
@@ -277,6 +294,8 @@ i {
     border-radius: 50%;
     padding: 3px;
     border: 1px solid black;
+    width: 55px;
+    height: 55px;
 }
 
 .sectionTitle {
@@ -347,7 +366,7 @@ input, textarea {
 #sendBtn {
     border: none;
     color: var(--color-blanco);
-    padding: 10px 20px 10px 20px;
+    padding: 10px 20px;
     background-color: var(--color-principal);
     border-radius: 6px;
     margin: 16px 0;
@@ -394,6 +413,7 @@ span i {
 footer {
     display: block;
     background-color: var(--color-secundario);
+    width: 100%;
 }
 
 .upFooter {
@@ -431,11 +451,11 @@ footer i{
 
 footer .terminos {
     line-height: 1.5rem;
-    margin: 1rem;
+    margin: 16px;
 }
 
 footer .social {
-    margin-right: 3rem;
+    margin-right: 48px;
     display: flex;
     justify-content: start;
 }
@@ -444,3 +464,527 @@ footer li {
     list-style-type: none;
 }
 
+
+
+                                                    /* Media Querys!*/
+
+        /* CELULAR */
+
+@media only screen and (max-width: 320px) {
+    * {
+        font-size: 13px;
+    }
+
+    header {
+        width: 100%;
+    }
+
+    header .registerLogin,
+    header .listInline {
+        display: none;
+    }
+
+    nav {
+        justify-content: center;
+    }
+
+    nav .sideMenu {
+        display: inline-block;
+        position: absolute;
+        right: 270px;
+    }
+
+    nav .title {
+        margin-left: 0;
+    }
+
+    .bannerContainer h2,
+    .bannerContainer p {
+        width: 200px;
+        top: 15%;
+        left: 15%;
+    }
+
+    .categorie {
+        width: 90%;
+        height: 500px;
+        flex-direction: column;
+
+    }
+
+    .categorie img {
+        width: 100%;
+        height: 250px;
+        border-radius: 6px 6px 0 0;
+    }
+
+    .info p {
+        margin-top: 10px;
+    }
+
+    .info a {
+        top: 5px;
+        left: 85px;
+    }
+
+    .cardsContainer {
+        display: grid;
+        align-items: center;
+        justify-content: center;
+        grid-template-columns: 1fr;
+        grid-template-areas: "sectionTitle"
+                             "card1"
+                             "card2"
+                             "card3"
+                             "card4";
+    }
+
+    .sectionTitle h2 {
+        font-size: 2rem;
+    }
+    
+    .clientCard {
+        width: 290px;
+        height: 200px;
+        
+    }
+
+    .extrasContainer {
+        margin: 64px 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+    
+    .extrasContainer img {
+        width: 200px;
+        height: 220px;
+    }
+    
+    .card {
+        margin-top: 20px;
+        width: 90%;
+        height: 350px;
+    }
+    
+    .cardText {
+        width: 250px;
+    }
+    
+    .cardText h3{
+        margin-bottom: 20px;
+    }
+
+
+    #contacto {
+        display: flex;
+        flex-direction: column;
+        height: 900px;
+        background-color: var(--color-blanco);
+    }
+    
+    .sideBarForm {
+        background-color: var(--color-principal);
+        width: 100%;
+        height: 350px;
+        order: -1;
+    }
+    
+    .formulario {
+        width: 100%;
+        height: 600px;
+    }
+
+    .formulario h2 {
+        font-size: 16px;
+    }
+    
+    .campos input {
+        width: 290px;
+    }
+    
+    .textArea textarea {
+        width: 290px;
+    }
+    
+    .sideBarForm div {
+        width: 70%;
+        height: 300px;
+    }
+    
+    p span {
+        display: block;
+        position: relative;
+        top: 10px;
+        margin: 5px 0 0 0;
+    }
+
+    
+    .upFooter {
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+    }
+
+    .upFooter div {
+        margin: 15px;
+    }
+    
+    .upFooter h4 {
+        margin-bottom: 10px;
+        font-size: 1.2rem;
+        color: var(--color-blanco);
+    }
+    
+    
+    .downFooter{
+        border-top: 1px solid var(--color-principalTrans);
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }  
+}
+
+
+        /* TABLET */
+
+
+@media only screen and (min-width: 768px) {
+    * {
+        font-size: 13px;
+    }
+        
+    header {
+        width: 100%;
+    }
+        
+    nav .title {
+        margin-left: 0;
+    }
+        
+    ul .menu {
+        background-color: var(--color-blanco);
+        left: 200px;
+        list-style-type: none;
+        border: 1px solid var(--color-background);
+    }
+        
+    .bannerContainer h2,
+    .bannerContainer p {
+        width: 300px;
+        top: 15%;
+        left: 10%;
+    }
+        
+    .categorie {
+        width: 90%;
+    }
+            
+    .categorie img {
+        border-radius: 6px 0 0 6px;
+        height: 100%;
+        width: 250px;
+        }
+            
+    .info {
+        margin: 32px;
+    }
+            
+    .info p {
+        margin-top: 19.2px;
+    }
+            
+    .info a {
+        top: 50px;
+    }
+        
+    .cardsContainer {
+        display: grid;
+        align-items: center;
+        justify-content: center;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 60px auto auto;
+        grid-template-areas: "sectionTitle sectionTitle"
+                             "card1        card2"
+                             "card3        card4";
+    }
+        
+    .sectionTitle h2 {
+        font-size: 2rem;
+    }
+            
+    .clientCard {
+        width: 290px;
+        height: 200px;
+    }
+        
+    .extrasContainer {
+        margin: 64px 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+            
+    .extrasContainer img {
+        width: 200px;
+        height: 220px;
+    }
+            
+    .card {
+        margin-top: 20px;
+        width: 90%;
+        height: 300px;
+        display: flex;
+        flex-direction: row;
+    }
+            
+    .cardText {
+        width: 250px;
+    }
+            
+    .cardText h3{
+        margin-bottom: 20px;
+    }
+        
+        
+    #contacto {
+        display: flex;
+        flex-direction: column;
+        height: 900px;
+        background-color: var(--color-blanco);
+    }
+            
+    .sideBarForm {
+        background-color: var(--color-principal);
+        width: 100%;
+        height: 350px;
+        order: -1;
+    }
+            
+    .formulario {
+        width: 100%;
+        height: 600px;
+    }
+        
+    .formulario h2 {
+        font-size: 16px;
+    }
+            
+    .campos input {
+        width: 290px;
+    }
+            
+    .textArea textarea {
+        width: 290px;
+    }
+            
+    .sideBarForm div {
+        width: 70%;
+        height: 300px;
+    }
+            
+    p span {
+        display: block;
+        position: relative;
+        top: 10px;
+        margin: 5px 0 0 0;
+    }        
+}
+
+
+        /* NOTEBOOKS */ 
+
+@media only screen and (min-width: 1024px) {
+    * {
+        font-size: 16px;
+    }
+        
+    header {
+        width: 100%;
+    }
+        
+    nav .title {
+        margin-left: 0;
+    }
+        
+    ul .menu {
+        background-color: var(--color-blanco);
+        left: 200px;
+        list-style-type: none;
+        border: 1px solid var(--color-background);
+    }
+        
+    .bannerContainer h2,
+    .bannerContainer p {
+        width: 300px;
+        top: 15%;
+        left: 10%;
+    }
+        
+    .categorie {
+        width: 90%;
+    }
+            
+    .categorie img {
+        border-radius: 6px 0 0 6px;
+        height: 100%;
+        width: 250px;
+        }
+            
+    .info {
+        margin: 32px;
+    }
+            
+    .info p {
+        margin-top: 19.2px;
+    }
+            
+    .info a {
+        top: 50px;
+    }
+        
+    .cardsContainer {
+        display: grid;
+        align-items: center;
+        justify-content: center;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 60px auto auto;
+        grid-template-areas: "sectionTitle sectionTitle"
+                             "card1        card2"
+                             "card3        card4";
+    }
+        
+    .sectionTitle h2 {
+        font-size: 2rem;
+    }
+            
+    .clientCard {
+        width: 290px;
+        height: 200px;
+    }
+        
+    .extrasContainer {
+        margin: 64px 0;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+    
+    .extrasContainer img {
+        width: 200px;
+        height: 220px;
+    }
+    
+    .card {
+        width: 300px;
+        height: 400px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    
+    .cardText {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 30px;
+        width: 260px;
+    }
+    
+    .cardText h3{
+        margin-bottom: 20px;
+    }
+        
+        
+    #contacto {
+        display: flex;
+        flex-direction: row;
+        height: 600px;
+    }
+    
+    .sideBarForm {
+        background-color: var(--color-principal);
+        width: 50%;
+        height: 100%;
+    }
+    
+    .formulario {
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        order: -1;
+    }
+    
+    .campos input {
+        display: block;
+        margin: 20px 0;
+        width: 300px;
+        border-style: none;
+    }
+    
+    .textArea textarea {
+        width: 300px;
+    }
+    
+    input, textarea {
+        border: none;
+        background-color: var(--color-principalTrans);
+        border-radius: 6px;
+        padding: 16px;
+        outline: none;
+    }
+    
+    #sendBtn {
+        border: none;
+        color: var(--color-blanco);
+        padding: 10px 20px;
+        background-color: var(--color-principal);
+        border-radius: 6px;
+        margin: 16px 0;
+        cursor: pointer;
+    }
+    
+    
+    .sideBarForm {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .sideBarForm div {
+        width: 400px;
+        height: 500px;
+    }
+    
+    .sideBarForm h2{
+        font-size: 3.8rem;
+        color: var(--color-blanco);
+    }
+    
+    .sideBarForm p{
+        font-size: 1.2rem;
+        font-weight: 600;
+        color: var(--color-blanco);
+    }
+    
+    p span {
+        display: block;
+        position: relative;
+        top: 110px;
+        margin: 30px 0 0 0;
+        color: var(--color-blanco);
+    }
+    
+    span i {
+        color: var(--color-blanco);
+    }        
+}
