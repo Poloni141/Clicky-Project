@@ -73,9 +73,9 @@ ul .menu {
 
 ul li:hover ul { /* Aca falta corregir como se muestra cuando se hace el hover*/
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: center;
-    align-items: stretch;
+    align-items: center;
 }
 
 nav .sideMenu {
@@ -180,6 +180,10 @@ i {
     margin-top: 19.2px;
 }
 
+.info h2 {
+    font-size: 1.4rem;
+}
+
 .info a {
     font-size: 0.85rem;
     color: var(--color-principal);
@@ -189,11 +193,6 @@ i {
     position: relative;
     top: 70px;
 }
-
-.info a:hover {
-    color: var(--color-principal);
-}
-
 
 .extrasContainer {
     margin: 64px 0 64px 0 ;
@@ -363,6 +362,10 @@ input, textarea {
     outline: none;
 }
 
+#cbox {
+    margin: 10px;
+}
+
 #sendBtn {
     border: none;
     color: var(--color-blanco);
@@ -373,12 +376,13 @@ input, textarea {
     cursor: pointer;
 }
 
-
+/*SE APLICA GRADIENT PARA EL DESAFIO PERO NO ES PARA EL MODELO FINAL*/
 .sideBarForm {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    background-image: linear-gradient(to right, var(--color-principal), var(--color-secundario));
 }
 
 .sideBarForm div {
@@ -463,6 +467,115 @@ footer .social {
 footer li {
     list-style-type: none;
 }
+
+
+/*CSS de paginas de articulos*/
+
+.categorieTitle {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 80px;
+}
+
+.categorieTitle h2 {
+    font-size: 2.3rem;
+}
+
+.categorieTitle p {
+    font-size: 1.2rem;
+    padding: 10px;
+}
+
+.items {
+    display: grid;
+    justify-items: center;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-row-gap: 70px;
+}
+
+.itemCard:hover,
+.recomendedCard:hover {
+    -webkit-box-shadow: 3px 6px 5px -1px rgba(0,0,0,0.21);
+    -moz-box-shadow: 3px 6px 5px -1px rgba(0,0,0,0.21);
+    box-shadow: 3px 6px 5px -1px rgba(0,0,0,0.21);
+    transform: scale(1.2, 1.2); /*Consigna del desafio de transformaciones*/
+}
+
+.itemCard {
+    width: 300px;
+    height: 550px;
+    background-color: var(--color-blanco);
+    border-radius: 6px;
+    transition: all 0.3s;
+}
+
+.itemCard img {
+    width: 100%;
+    height: 300px;
+    border-radius: 6px 6px 0 0;
+}
+
+.itemInfoContainer {
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+}
+
+.itemInfo {
+    width: 85%;
+    height: 240px;
+}
+
+.itemInfo h2 {
+    margin-top: 10px;
+    font-size: 1.4rem;
+}
+
+.itemInfo p {
+    margin-top: 10px;
+}
+
+.itemBtn a{
+    color: var(--color-principal);
+    font-size: 0.9rem;
+    padding: 12.8px;
+    border-radius: 6px;
+    background-color: var(--color-principalTrans);
+    transition: all 0.3s;
+}
+
+.itemBtn a:hover{
+    color: var(--color-blanco);
+    background-color: var(--color-principal);
+}
+
+
+.recomendados {
+    display: grid;
+    justify-items: center;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.recomendedCard {
+    transition: all 0.3s;
+}
+
+.recomendedCard,
+.recomendedCard img {
+    width: 300px;
+    height: 300px;
+    border-radius: 10px;
+}
+
+
+
+
 
 
 
@@ -987,4 +1100,460 @@ footer li {
     span i {
         color: var(--color-blanco);
     }        
+}
+
+
+@media only screen and (min-width: 1440px) {   
+    .categoriesContainer {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    header {
+        background-color: var(--color-blanco);
+        padding: 16px;
+        z-index: 10;
+        width: 100%;
+    }
+    
+    .listInline {
+        display: inline-block;
+        margin-left: 22.4px;
+        list-style: none;
+    }
+    
+    nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    nav .leftMenu{
+        display: flex;
+        justify-content: start;
+        align-items: center;
+    }
+    
+    
+    header .menu {
+        display: none;
+        position: absolute;
+    }
+    
+    li .shop {
+        position: relative;
+    }
+    
+    ul .menu {
+        background: rgba( 255, 255, 255, 0.6 );
+        box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+        backdrop-filter: blur( 4.5px );
+        -webkit-backdrop-filter: blur( 4.5px );
+        left: 260px;
+        list-style-type: none;
+        z-index: 9;
+    }
+    
+    .menu li {
+        padding: 15px;
+    }
+    
+    ul li:hover ul { /* Aca falta corregir como se muestra cuando se hace el hover*/
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: stretch;
+    }
+    
+    nav .sideMenu {
+        display: none;
+    }
+    
+    header .title {
+        font-size: 2.5rem;
+        color: var(--color-principal);
+        font-family: 'Montserrat Alternates', sans-serif;
+        margin-left: 32px;
+        cursor: default;
+    }
+    
+    .registerLogin {
+        margin-right: 32px;
+    }
+    
+    .registerLogin a{
+        font-size: 0.8rem;
+        margin: 6.4px;
+    }
+    
+    .loginBtn {
+        color: var(--color-principal);
+        padding: 12.8px;
+        border-radius: 6px;
+        background-color: var(--color-principalTrans);
+    }
+    
+    .registerBtn {
+        color: var(--color-blanco);
+        padding: 12.8px;
+        background-color: var(--color-principal);
+        border-radius: 6px;
+    }
+    
+    a {
+        font-size: 1rem;
+        font-weight: 600;
+        text-decoration: none;
+    }
+    
+    i {
+        color: var(--color-principal);
+        font-size: 1.7rem;
+        margin: 11.2px;
+        cursor: pointer;
+    }
+    
+    .bannerContainer {
+        background-image: url("../media/Baner.jpg");
+        height: 400px;
+        min-height: 400px;
+    }
+    
+    .bannerContainer p, 
+    .bannerContainer h2 {
+        position: relative;
+        top: 30%;
+        left: 5%;
+        color: var(--color-blanco);
+        font-weight: 600;
+        width: 600px;
+    }
+    
+    .bannerContainer h2 {
+        font-size: 2.2rem;
+    }
+    
+    .bannerContainer p {
+        font-size: 1.8rem;
+        font-weight: 400;
+        margin-top: 30px;
+    }
+    
+    .categorie {
+        margin: 32px 0 32px 0;
+        width: 97%;
+        height: 251.6px;
+        
+        border-radius: 6px;
+        background-color: var(--color-blanco);
+        display: flex;
+        justify-content: start;
+        -webkit-box-shadow: 3px 6px 5px -1px rgba(0,0,0,0.21);
+        -moz-box-shadow: 3px 6px 5px -1px rgba(0,0,0,0.21);
+        box-shadow: 3px 6px 5px -1px rgba(0,0,0,0.21);
+    }
+    
+    .categorie img {
+        border-radius: 6px 0 0 6px;
+        height: 100%;
+        width: 350px;
+    }
+    
+    .info {
+        margin: 32px;
+    }
+    
+    .info p {
+        margin-top: 19.2px;
+    }
+
+    .info h2 {
+        font-size: 1.4rem;
+    }
+    
+    .info a {
+        font-size: 0.85rem;
+        color: var(--color-principal);
+        padding: 9.6px;
+        border-radius: 6px;
+        background-color: var(--color-principalTrans);
+        position: relative;
+        top: 70px;
+    }
+    
+    .info a:hover {
+        color: var(--color-principal);
+    }
+    
+    
+    .extrasContainer {
+        margin: 64px 0 64px 0 ;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+    
+    .extrasContainer img {
+        width: 200px;
+        height: 220px;
+    }
+    
+    .card {
+        background-color: var(--color-blanco);
+        width: 500px;
+        height: 400px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        border-radius: 6px;
+        -webkit-box-shadow: 3px 6px 5px -1px rgba(0,0,0,0.21);
+        -moz-box-shadow: 3px 6px 5px -1px rgba(0,0,0,0.21);
+        box-shadow: 3px 6px 5px -1px rgba(0,0,0,0.21);
+    }
+    
+    .cardText {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 30px;
+        width: 300px;
+    }
+    
+    .cardText h3{
+        margin-bottom: 20px;
+    }
+    
+    .comentarys {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+    
+    .cardsContainer {
+        margin: 70px 0 70px 0;
+        width: 70%;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: 90px auto;
+        grid-column-gap: 20px;
+        grid-row-gap: 20px;
+        grid-template-areas: "sectionTitle sectionTitle sectionTitle sectionTitle"
+                             "card1        card2        card3        card4";
+        justify-items: center;
+        align-items: center;
+    }
+    
+    .clientCard {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        width: 300px;
+        height: 200px;
+        background-color: var(--color-blanco);
+        border-radius: 6px;
+        border: 1px solid #dee2e6;
+    
+        -webkit-box-shadow: 3px 6px 5px -1px rgba(0,0,0,0.21);
+        -moz-box-shadow: 3px 6px 5px -1px rgba(0,0,0,0.21);
+        box-shadow: 3px 6px 5px -1px rgba(0,0,0,0.21);
+    }
+    
+    .comentary {
+        height: 50%;
+    }
+    
+    .clientCard .comentary {
+        width: 250px;
+    }
+    
+    .clientProfile {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: center;
+        align-content: center;
+        border-top: 1px solid #dee2e6;
+        width: 100%;
+        height: 40%;
+    }
+    
+    .clientProfile img {
+        border-radius: 50%;
+        padding: 3px;
+        border: 1px solid black;
+        width: 55px;
+        height: 55px;
+    }
+    
+    .sectionTitle {
+        grid-area: sectionTitle;
+    }
+    
+    .clientCard .card1 {
+        grid-area: card1;
+    }
+    
+    .clientCard .card2 {
+        grid-area: card2;
+    }
+    
+    .clientCard .card1 {
+        grid-area: card3;
+    }
+    
+    .clientCard .card1 {
+        grid-area: card4;
+    }
+    
+    
+    #contacto {
+        display: flex;
+        height: 600px;
+        background-color: var(--color-blanco);
+    }
+    
+    .sideBarForm {
+        background-color: var(--color-principal);
+        width: 50%;
+    }
+    
+    .formulario {
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    
+    ::placeholder {
+        font-weight: 600;
+        color: var(--color-principal);
+    }
+    
+    .campos input {
+        display: block;
+        margin: 20px 0;
+        width: 400px;
+        border-style: none;
+    }
+    
+    .textArea textarea {
+        width: 400px;
+    }
+    
+    input, textarea {
+        border: none;
+        background-color: var(--color-principalTrans);
+        border-radius: 6px;
+        padding: 16px;
+        outline: none;
+    }
+    
+    #sendBtn {
+        border: none;
+        color: var(--color-blanco);
+        padding: 10px 20px;
+        background-color: var(--color-principal);
+        border-radius: 6px;
+        margin: 16px 0;
+        cursor: pointer;
+    }
+    
+    
+    .sideBarForm {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .sideBarForm div {
+        width: 700px;
+        height: 500px;
+    }
+    
+    .sideBarForm h2{
+        font-size: 3.8rem;
+        color: var(--color-blanco);
+    }
+    
+    .sideBarForm p{
+        font-size: 1.2rem;
+        font-weight: 600;
+        color: var(--color-blanco);
+    }
+    
+    p span {
+        display: block;
+        position: relative;
+        top: 110px;
+        margin: 30px 0 0 0;
+        color: var(--color-blanco);
+    }
+    
+    span i {
+        color: var(--color-blanco);
+    }
+    
+    
+    footer {
+        display: block;
+        background-color: var(--color-secundario);
+        width: 100%;
+    }
+    
+    .upFooter {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: center;
+        padding: 60px;
+    }
+    
+    .upFooter h4 {
+        margin-bottom: 20px;
+        color: var(--color-blanco);
+    }
+    
+    
+    .downFooter{
+        border-top: 1px solid var(--color-principalTrans);
+        padding: 20px;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+    
+    
+    footer a, footer p, footer i{
+        color: var(--color-blanco);
+        font-size: 1rem;
+        font-weight: 400;
+    }
+    
+    footer i{
+        font-size: 1.4rem;
+    }
+    
+    footer .terminos {
+        line-height: 1.5rem;
+        margin: 16px;
+    }
+    
+    footer .social {
+        margin-right: 48px;
+        display: flex;
+        justify-content: start;
+    }
+    
+    footer li {
+        list-style-type: none;
+    }
 }
