@@ -16,9 +16,9 @@
     <script src="https://kit.fontawesome.com/3bf9f8b441.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <header>
-        <nav>
-            <div class="leftMenu">
+    <header class="header">
+        <nav class="header__nav">
+            <div class="header__leftMenu">
                 <div class="sideMenu"><i class="fas fa-bars"></i></div>
                 <h1 class="title">Clicky</h1>
                 <ul>
@@ -38,9 +38,9 @@
                 </ul>
             </div>
 
-            <div class="registerLogin"> <!--Lista desplegable de las categorias-->
-                <a href="login.html" class="loginBtn">Iniciar sesion</a>
-                <a href="#" class="registerBtn">Registrarse</a>
+            <div class="header__registerLogin"> <!--Lista desplegable de las categorias-->
+                <a href="login.html" class="header__loginBtn">Iniciar sesion</a>
+                <a href="#" class="comentarys__registerBtn">Registrarse</a>
             </div>
         </nav>
     </header>
@@ -75,7 +75,7 @@
 
         <section class="categoriesContainer"> <!--Categorias-->
                 <!--La idea es hacerlo con CSS Grid-->
-                <article class="categorie">
+                <article class="categoriesContainer__categorie">
                     <div class="imagen">
                         <img src="media/switches.jpg" alt="Switches">
                     </div>
@@ -87,7 +87,7 @@
                     </div>
                 </article>
 
-                <article class="categorie">
+                <article class="categoriesContainer__categorie">
                     <div class="imagen">
                         <img src="media/keycaps1.png" alt="Switches">
                     </div>
@@ -99,7 +99,7 @@
                     </div>
                 </article>
 
-                <article class="categorie">
+                <article class="categoriesContainer__categorie">
                     <div class="imagen">
                         <img src="media/cable.jpg" alt="Switches">
                     </div>
@@ -111,7 +111,7 @@
                     </div>
                 </article>
 
-                <article class="categorie">
+                <article class="categoriesContainer__categorie">
                     <div class="imagen">
                         <img src="media/teclado.jpg" alt="Switches">
                     </div>
@@ -123,7 +123,7 @@
                     </div>
                 </article>
 
-                <article class="categorie">
+                <article class="categoriesContainer__categorie">
                     <div class="imagen">
                         <img src="media/case.jpg" alt="Switches">
                     </div>
@@ -135,7 +135,7 @@
                     </div>
                 </article>
 
-                <article class="categorie">
+                <article class="categoriesContainer__categorie">
                     <div class="imagen">
                         <img src="media/herramientas.jpg" alt="Herramientas">
                     </div>
@@ -149,12 +149,12 @@
         </section>
 
         <section class="comentarys"> <!--CSS grid-->
-            <div class="cardsContainer">
+            <div class="comentarys__cardsContainer">
                 <div class="sectionTitle">
                     <h2>Nuestos clientes</h2>
                 </div>
 
-                <article class="clientCard card1">
+                <article class="comentarys__clientCard comentarys__clientCard--card1">
                     <div class="comentary">
                         <p>Quede fascinada con la calidad de materiales.</p>
                     </div>
@@ -165,7 +165,7 @@
                     </div>
                 </article>
 
-                <article class="clientCard card2">
+                <article class="comentarys__clientCard comentarys__clientCard--card2">
                     <div class="comentary">
                         <p>Pocas veces uno se encuentra con paginas que vendan tan buenos productos.</p>
                     </div>
@@ -181,7 +181,7 @@
                     </div>
                 </article>
 
-                <article class="clientCard card3">
+                <article class="comentarys__clientCard comentarys__clientCard--card3">
                     <div class="comentary">
                         <p>Muy buena atencion y calidad de atencion post-venta.</p>
                     </div>
@@ -192,7 +192,7 @@
                     </div>
                 </article>
 
-                <article class="clientCard card4">
+                <article class="comentarys__clientCard comentarys__clientCard--card4">
                     <div class="comentary">
                         <p>Siempre me atendieron muy bien y dispuestos a ayudar con todo!.</p>
                     </div>
@@ -207,32 +207,32 @@
 
 
         <section class="extrasContainer"> <!--Metodos de pago, envio y garantia-->
-            <article class="card">
-                    <div class="svg">
+            <article class="extrasContainer__card">
+                    <div class="extrasContainer__svg">
                         <img src="media/creditcard.svg" alt="Podes pagar con efectivo, con tarjeta de debito o credito">
                     </div>
-                    <div class="cardText">
+                    <div class="extrasContainer__cardText">
                         <h3>Pagos</h3>
                         <p>Podes pagar de la manera que vos prefieras. Aceptamos efectivo, tarjeta de credito y debito.</p>
                     </div>
             </article>
 
-            <article class="card">
-                    <div class="svg">
+            <article class="extrasContainer__card">
+                    <div class="extrasContainer__svg">
                         <img src="media/delivery.svg" alt="Podes pagar con efectivo, con tarjeta de debito o credito">
                     </div>
-                    <div class="cardText">
+                    <div class="extrasContainer__cardText">
                         <h3>Envios</h3>
                         <p>Realizamos envios a todo el mundo. Lo embalaremos para que llegue sano y salvo.</p>
                     </div>
             </article>
 
-            <article class="card">
+            <article class="extrasContainer__card">
                     <!--Cambiar estos nombres ya que es diferente al modelo-->
-                    <div class="svg">
+                    <div class="extrasContainer__svg">
                         <img src="media/Support.svg" alt="Podes pagar con efectivo, con tarjeta de debito o credito">
                     </div>
-                    <div class="cardText">
+                    <div class="extrasContainer__cardText">
                         <h3>Soporte</h3>
                         <p>Te brindaremos asistencia pre-venta y post-venta. Siempre estaremos para ayudarte.</p>
                     </div>
@@ -240,7 +240,7 @@
         </section>
 
         <section id="contacto"> <!--Formulario para consultas-->
-                <div class="formulario">
+                <div class="contacto__formulario">
                     <h2>Contacto</h2>
                     <form action="#">
                         <div class="campos">
@@ -276,7 +276,7 @@
 
     <footer>
         <div class="upFooter">
-            <div class="company"> 
+            <div class="upFooter__column"> 
                 <ul>
                     <li><h4>Compañia</h4></li>
                     <li><a href="#">Sobre nosotros</a></li>
@@ -286,7 +286,7 @@
                 </ul>
             </div>
 
-            <div class="soporte"> 
+            <div class="upFooter__column"> 
                 <ul>
                     <li><h4>Soporte</h4></li>
                     <li><a href="#">Tutoriales</a></li>
@@ -295,7 +295,7 @@
                 </ul>
             </div>
 
-            <div class="legal"> 
+            <div class="upFooter__column"> 
                 <ul>
                     <li><h4>Legal</h4></li>
                     <li><a href="#">Cookies</a></li>
@@ -304,7 +304,7 @@
                 </ul>
             </div>
 
-            <div class="aplicacion"> 
+            <div class="upFooter__column"> 
                 <!--Aca van los svg para playstore y appstore-->
                 <ul>
                     <li><h4>Descarga la app</h4></li>
