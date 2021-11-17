@@ -4,13 +4,16 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Venta de teclados mecanicos personalizados y componentes para su armado">
-    <meta name="keywords" content="Teclados, Keyboards, Switches, Personalizacion, Mecanicos, Mechanical, Keycaps">
     <title>Clicky</title>
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-uWxY/CJNBR+1zjPWmfnSnVxwRheevXITnMqoEIeG1LJrdI0GlVs/9cVSyPYXdcSF" crossorigin="anonymous">
 
     <link rel="stylesheet" href="style/style.css">
+
+    <link rel="apple-touch-icon" sizes="180x180" href="media/favicon/apple-touch-icon.pngNo">
+    <link rel="icon" type="image/png" sizes="32x32" href="media/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="media/favicon/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -18,31 +21,31 @@
     <script src="https://kit.fontawesome.com/3bf9f8b441.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <header>
-        <nav>
-            <div class="leftMenu">
-                <div class="sideMenu"><i class="fas fa-bars"></i></div>
-                <h1 class="title">Clicky</h1>
-                <ul>
-                    <li class="listInline"><a href="index.html">Inicio</a></li>
-                    <li class="listInline"><a href="" class="shop">Shop</a>
-                        <ul class="menu">
-                            <li><a href="switches.html">Switches</a></li>
-                            <li><a href="keycaps.html">Keycaps</a></li>
-                            <li><a href="cables.html">Cables</a></li>
-                            <li><a href="keyboards.html">Teclados</a></li>
-                            <li><a href="case.html">Cases</a></li>
-                            <li><a href="tools.html">Herramientas</a></li>
+    <header class="header">
+        <nav class="header__nav">
+            <div class="header__container">
+                <div class="header__menuBtn"><i class="fas fa-bars"></i></div>
+                <h1 class="header__title">Clicky</h1>
+                <ul class="header__listaPrincipal">
+                    <li class="header__seccion"><a href="index.html">Inicio</a></li>
+                    <li class="header__seccion header__seccion-menu"><a href="" class="header__shop">Shop</a>
+                        <ul class="header__listaSecundaria">
+                            <li class="header__opcion"><a href="switches.html">Switches</a></li>
+                            <li class="header__opcion"><a href="keycaps.html">Keycaps</a></li>
+                            <li class="header__opcion"><a href="cables.html">Cables</a></li>
+                            <li class="header__opcion"><a href="keyboards.html">Teclados</a></li>
+                            <li class="header__opcion"><a href="case.html">Cases</a></li>
+                            <li class="header__opcion"><a href="tools.html">Herramientas</a></li>
                         </ul>
                     </li>
 
-                    <li class="listInline"><a href="#contacto">Soporte</a></li>
+                    <li class="header__seccion"><a href="#contacto">Soporte</a></li>
                 </ul>
             </div>
 
-            <div class="registerLogin"> <!--Lista desplegable de las categorias-->
-                <a href="login.html" class="loginBtn">Iniciar sesion</a>
-                <a href="#" class="registerBtn">Registrarse</a>
+            <div class="header__registerLogin"> <!--Lista desplegable de las categorias-->
+                <a href="login.html" class="header__loginBtn">Iniciar sesion</a>
+                <a href="#" class="header__registerBtn">Registrarse</a>
             </div>
         </nav>
     </header>
@@ -89,260 +92,277 @@
               </div>
         </section>
 
-        <section class="categoriesContainer"> <!--Categorias-->
-                <article class="categorie">
-                    <div class="imagen">
-                        <img src="media/switches.jpg" alt="Switches">
+        <section class="categories"> <!--Categorias-->
+                <article class="categories__categorie">
+                    <div class="categories__imgContainer">
+                        <img class="categories__img" src="media/switchs.jpg" alt="Switches">
                     </div>
 
-                    <div class="info">
-                        <h2>Switches</h2>
-                        <p>Aqui podras encontrar switches de todas las marcas, tipos y pines. Todo para que puedas armar tu propio teclado mecanico y le des la sensacion de tipeo que vos buscas. Poseemos switches Linear Tactile, Mecanicos y Opticos.</p>
-                        <a href="switches.html">Ver mas</a>
-                    </div>
-                </article>
-
-                <article class="categorie">
-                    <div class="imagen">
-                        <img src="media/keycaps1.png" alt="Switches">
-                    </div>
-
-                    <div class="info">
-                        <h2>Keycaps</h2>
-                        <p>Aqui podras encontrar keycaps para teclados de 95%, 85%, 75% y 65%. Personalizados de impresion 3D, de Epoxy y los mas tradicionales de PBT de doble inyeccion para la maxima resistencia al desgaste. Podes comprar la unidad o el kit completo.</p>
-                        <a href="keycaps.html">Ver mas</a>
+                    <div class="categories__info">
+                        <h2 class="categories__title">Switches</h2>
+                        <p class="categories__descripcion">Aqui podras encontrar switches de todas las marcas, tipos y pines. Todo para que puedas armar tu propio teclado mecanico y le des la sensacion de tipeo que vos buscas. Poseemos switches Linear Tactile, Mecanicos y Opticos.</p>
+                        <a class="categories__btn" href="switches.html">Ver mas</a>
                     </div>
                 </article>
 
-                <article class="categorie">
-                    <div class="imagen">
-                        <img src="media/cable.jpg" alt="Switches">
+                <article class="categories__categorie">
+                    <div class="categories__imgContainer">
+                        <img class="categories__img" src="media/keycap_prueba.jpg" alt="Switches">
                     </div>
 
-                    <div class="info">
-                        <h2>Cables</h2>
-                        <p>Aqui podras encontrar cables mallados y no mallados con una calidad sin igual los cuales haran que tu setup sea unico a tu estilo. Si tenes una idea en mente podes enviarnosla y lo estaremos armando para vos ya que los mismos son artesanales.</p>
-                        <a href="cables.html">Ver mas</a>
-                    </div>
-                </article>
-
-                <article class="categorie">
-                    <div class="imagen">
-                        <img src="media/teclado.jpg" alt="Switches">
-                    </div>
-
-                    <div class="info">
-                        <h2>Teclados</h2>
-                        <p>Aqui podras encontrar teclados mecanicos tanto Bluetooth como de cable (No se incluye). Los mismos ya vienen pre-ensamblados y directamente importados de Japon. Los tamaños que tenemos por el momento son 75% y 85%.</p>
-                        <a href="keyboards.html">Ver mas</a>
+                    <div class="categories__info">
+                        <h2 class="categories__title">Keycaps</h2>
+                        <p class="categories__descripcion">Aqui podras encontrar keycaps para teclados de 95%, 85%, 75% y 65%. Personalizados de impresion 3D, de Epoxy y los mas tradicionales de PBT de doble inyeccion para la maxima resistencia al desgaste. Podes comprar la unidad o el kit completo.</p>
+                        <a class="categories__btn" href="keycaps.html">Ver mas</a>
                     </div>
                 </article>
 
-                <article class="categorie">
-                    <div class="imagen">
-                        <img src="media/case.jpg" alt="Switches">
+                <article class="categories__categorie">
+                    <div class="categories__imgContainer">
+                        <img class="categories__img" src="media/cablevioletanacarado.jpg" alt="Switches">
                     </div>
 
-                    <div class="info">
-                        <h2>Cases</h2>
-                        <p>Aqui podras encontrar case's de todos los materiales para poder armar tu teclado a gusto. Podras encontrar lo mismos en medidas de 75% y 85%, en materiales de Aluminio, Madera y Plastico.</p>
-                        <a href="case.html">Ver mas</a>
+                    <div class="categories__info">
+                        <h2 class="categories__title">Cables</h2>
+                        <p class="categories__descripcion">Aqui podras encontrar cables mallados y no mallados con una calidad sin igual los cuales haran que tu setup sea unico a tu estilo. Si tenes una idea en mente podes enviarnosla y lo estaremos armando para vos ya que los mismos son artesanales.</p>
+                        <a class="categories__btn" href="cables.html">Ver mas</a>
                     </div>
                 </article>
 
-                <article class="categorie">
-                    <div class="imagen">
-                        <img src="media/herramientas.jpg" alt="Herramientas">
+                <article class="categories__categorie">
+                    <div class="categories__imgContainer">
+                        <img class="categories__img" src="media/teclado5.jpg" alt="Switches">
                     </div>
 
-                    <div class="info">
-                        <h2>Herramientas</h2>
-                        <p>Aqui podras encontrar las herramientas que te ayudaran a armar tus teclados como a mejorarlos. Pinzas parar desarmar switches, lubricantes, estabilizadores, extractores de keycaps y muchisimo mas.</p>
-                        <a href="tools.html">Ver mas</a>
+                    <div class="categories__info">
+                        <h2 class="categories__title">Teclados</h2>
+                        <p class="categories__descripcion">Aqui podras encontrar teclados mecanicos tanto Bluetooth como de cable (No se incluye). Los mismos ya vienen pre-ensamblados y directamente importados de Japon. Los tamaños que tenemos por el momento son 75% y 85%.</p>
+                        <a class="categories__btn" href="keyboards.html">Ver mas</a>
+                    </div>
+                </article>
+
+                <article class="ccategories__categorie">
+                    <div class="categories__imgContainer">
+                        <img class="categories__img" src="media/case.jpg" alt="Switches">
+                    </div>
+
+                    <div class="categories__info">
+                        <h2 class="categories__title">Cases</h2>
+                        <p class="categories__descripcion">Aqui podras encontrar case's de todos los materiales para poder armar tu teclado a gusto. Podras encontrar lo mismos en medidas de 75% y 85%, en materiales de Aluminio, Madera y Plastico.</p>
+                        <a class="categories__btn" href="case.html">Ver mas</a>
+                    </div>
+                </article>
+
+                <article class="categories__categorie">
+                    <div class="categories__imgContainer">
+                        <img class="categories__img" src="media/herramientas.jpg" alt="Herramientas">
+                    </div>
+
+                    <div class="categories__info">
+                        <h2 class="categories__title">Herramientas</h2>
+                        <p class="categories__descripcion">Aqui podras encontrar las herramientas que te ayudaran a armar tus teclados como a mejorarlos. Pinzas parar desarmar switches, lubricantes, estabilizadores, extractores de keycaps y muchisimo mas.</p>
+                        <a class="categories__btn" href="tools.html">Ver mas</a>
                     </div>
                 </article>
         </section>
 
         <section class="comentarys"> <!--CSS grid-->
-            <div class="cardsContainer">
-                <div class="sectionTitle">
-                    <h2>Nuestos clientes</h2>
+            <div class="comentarys__container">
+                <div class="comentarys__titleContainer">
+                    <h2 class="comentarys__title">Nuestos clientes</h2>
                 </div>
 
-                <article class="clientCard card1">
-                    <div class="comentary">
-                        <p>Quede fascinada con la calidad de materiales.</p>
+                <article class="comentarys__card comentarys__card-card1">
+                    <div class="comentarys__comentary">
+                        <p class="comentarys__text">Quede fascinada con la calidad de materiales.</p>
                     </div>
 
-                    <div class="clientProfile">
-                        <img src="media/profile1.jpeg">
-                        <p>Micaela Onfori</p>
-                    </div>
-                </article>
-
-                <article class="clientCard card2">
-                    <div class="comentary">
-                        <p>Pocas veces uno se encuentra con paginas que vendan tan buenos productos.</p>
-                    </div>
-
-                    <div class="clientProfile">
-                        <div>
-                            <img src="media/profile2.jpg">
+                    <div class="comentarys__profile">
+                        <div class="comentarys_imgContainer">
+                            <img class="comentarys__img" src="media/profile.png">
                         </div>
 
-                        <div>
-                            <p>Agustin Maye</p>
+                        <div class="comentarys_nameContainer">
+                            <p class="comentarys__name">Micaela Onfori</p>
                         </div>
                     </div>
                 </article>
 
-                <article class="clientCard card3">
-                    <div class="comentary">
-                        <p>Muy buena atencion y calidad de atencion post-venta.</p>
+                <article class="comentarys__card comentarys__card-card2">
+                    <div class="comentarys__comentary">
+                        <p class="comentarys__text">Pocas veces uno se encuentra con paginas que vendan tan buenos productos.</p>
                     </div>
 
-                    <div class="clientProfile">
-                        <img src="media/profile3.jpeg">
-                        <p>Juan Molinardi</p>
+                    <div class="comentarys__profile">
+                        <div class="comentarys_imgContainer">
+                            <img class="comentarys__img" src="media/profile.png">
+                        </div>
+
+                        <div class="comentarys_nameContainer">
+                            <p class="comentarys__name">Agustin Maye</p>
+                        </div>
                     </div>
                 </article>
 
-                <article class="clientCard card4">
-                    <div class="comentary">
-                        <p>Siempre me atendieron muy bien y dispuestos a ayudar con todo!.</p>
+                <article class="comentarys__card comentarys__card-card3">
+                    <div class="comentarys__comentary">
+                        <p class="comentarys__text">Muy buena atencion y calidad de atencion post-venta.</p>
                     </div>
 
-                    <div class="clientProfile">
-                        <img src="media/profile4.jpg">
-                        <p>Agustin Cedernoso</p>
+                    <div class="comentarys__profile">
+                        <div class="comentarys_imgContainer">
+                            <img class="comentarys__img" src="media/profile.png">
+                        </div>
+
+                        <div class="comentarys_nameContainer">
+                            <p class="comentarys__name">Juan Molinardi</p>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="comentarys__card comentarys__card-card4">
+                    <div class="comentarys__comentary">
+                        <p class="comentarys__text">Siempre me atendieron muy bien y dispuestos a ayudar con todo!.</p>
+                    </div>
+
+                    <div class="comentarys__profile">
+                        <div class="comentarys_imgContainer">
+                            <img class="comentarys_imgContainer" src="media/profile.png">
+                        </div>
+
+                        <div class="comentarys_nameContainer">
+                            <p class="comentarys__name">Agustin Cedernoso</p>
+                        </div>
                     </div>
                 </article>
             </div>
         </section>
 
 
-        <section class="extrasContainer"> <!--Metodos de pago, envio y garantia-->
-            <article class="card">
-                    <div class="svg">
-                        <img src="media/creditcard.svg" alt="Podes pagar con efectivo, con tarjeta de debito o credito">
+        <section class="extras"> <!--Metodos de pago, envio y garantia-->
+            <article class="extras__card">
+                    <div class="extras__svgContainer">
+                        <img class="extras__svg" src="media/creditcard.svg" alt="Podes pagar con efectivo, con tarjeta de debito o credito">
                     </div>
-                    <div class="cardText">
-                        <h3>Pagos</h3>
-                        <p>Podes pagar de la manera que vos prefieras. Aceptamos efectivo, tarjeta de credito y debito.</p>
+
+                    <div class="extras__info">
+                        <h3 class="extras__title">Pagos</h3>
+                        <p class="extras__descipcion">Podes pagar de la manera que vos prefieras. Aceptamos efectivo, tarjeta de credito y debito.</p>
                     </div>
             </article>
 
-            <article class="card">
-                    <div class="svg">
-                        <img src="media/delivery.svg" alt="Podes pagar con efectivo, con tarjeta de debito o credito">
+            <article class="extras__card">
+                    <div class="extras__svgContainer">
+                        <img class="extras__svg" src="media/delivery.svg" alt="Podes pagar con efectivo, con tarjeta de debito o credito">
                     </div>
-                    <div class="cardText">
-                        <h3>Envios</h3>
-                        <p>Realizamos envios a todo el mundo. Lo embalaremos para que llegue sano y salvo.</p>
+
+                    <div class="extras__info">
+                        <h3 class="extras__title">Envios</h3>
+                        <p class="extras__descipcion">Realizamos envios a todo el mundo. Lo embalaremos para que llegue sano y salvo.</p>
                     </div>
             </article>
 
-            <article class="card">
+            <article class="extras__card">
                     <!--Cambiar estos nombres ya que es diferente al modelo-->
-                    <div class="svg">
-                        <img src="media/Support.svg" alt="Podes pagar con efectivo, con tarjeta de debito o credito">
+                    <div class="extras__svgContainer">
+                        <img class="extras__svg" src="media/Support.svg" alt="Podes pagar con efectivo, con tarjeta de debito o credito">
                     </div>
-                    <div class="cardText">
-                        <h3>Soporte</h3>
-                        <p>Te brindaremos asistencia pre-venta y post-venta. Siempre estaremos para ayudarte.</p>
+
+                    <div class="extras__info">
+                        <h3 class="extras__title">Soporte</h3>
+                        <p class="extras__descipcion">Te brindaremos asistencia pre-venta y post-venta. Siempre estaremos para ayudarte.</p>
                     </div>
             </article>
         </section>
 
-        <section id="contacto"> <!--Formulario para consultas-->
-                <div class="formulario">
-                    <h2>Contacto</h2>
-                    <form action="#">
-                        <div class="campos">
-                            <input type="text" name="nombre" placeholder="Nombre completo" required>
-                            <input type="email" name="email" placeholder="Email" required>
-                            <input type="tel" name="telefono" placeholder="Telefono" required> 
+        <section class="contacto" id="contacto"> <!--Formulario para consultas-->
+                <div class="contacto__formulario">
+                    <h2 class="contacto__title">Contacto</h2>
+                    <form class="contacto__form" action="#">
+                        <div class="contacto__inputs">
+                            <input class="contacto__input contacto__input-nombre" type="text" name="nombre" placeholder="Nombre completo" required>
+                            <input class="contacto__input contacto__input-email" type="email" name="email" placeholder="Email" required>
+                            <input class="contacto__input contacto__input-telefono"type="tel" name="telefono" placeholder="Telefono" required> 
                         </div>
 
-                        <div class="textArea">
-                            <textarea name="consulta" id="" cols="30" rows="10" placeholder="Escriba aqui su consulta..." required></textarea>
+                        <div class="contacto__textAreaContainer">
+                            <textarea class="contacto__textArea" name="consulta" id="" cols="30" rows="10" placeholder="Escriba aqui su consulta..." required></textarea>
                         </div>
 
-                        <div class="enviar">
-                            <input type="submit" value="Enviar" id="sendBtn">
-                            <input type="checkbox" id="cbox">Suscribirse a las noticias
+                        <div class="contacto__enviar">
+                            <input class="contacto__enviarBtn" type="submit" value="Enviar" id="sendBtn">
+                            <input class="contacto__checkbox" type="checkbox" id="cbox">Suscribirse a las noticias
                         </div>
                     </form>
                 </div>
 
-                <div class="sideBarForm"> <!--Esto va estar del lado derecho como informacion adicional al costado del formulario-->
-                    <div>
-                        <h2>Hola !</h2>
-                        <p>Nos complace poder ayudarte pero necesitamos completes el formulario y te estaremos respondiendo dentro de las 24 horas.
+                <div class="contacto__aside"> <!--Esto va estar del lado derecho como informacion adicional al costado del formulario-->
+                    <div class="contacto__info">
+                        <h2 class="contacto__asideTitle">Hola !</h2>
+                        <p class="contacto__text">Nos complace poder ayudarte pero necesitamos completes el formulario y te estaremos respondiendo dentro de las 24 horas.
                         </p>
-                        <p><span><i class="far fa-envelope"></i>Clicky@gmail.com</span></p>
-                        <p><span><i class="fas fa-phone"></i>+54 011-6515-7749</span></p>
-                        <p><span><i class="far fa-map"></i>Av. Lavarden 157 CABA</span></p>
+                        <p class="contacto__text"><span class="contacto__span"><i class="far fa-envelope"></i>Clicky@gmail.com</span></p>
+                        <p class="contacto__text"><span class="contacto__span"><i class="fas fa-phone"></i>+54 011-6515-7749</span></p>
+                        <p class="contacto__text"><span class="contacto__span"><i class="far fa-map"></i>Av. Lavarden 157 CABA</span></p>
                     </div>
                 </div>
         </section>
     </main>
 
 
-    <footer>
-        <div class="upFooter">
-            <div class="company"> 
-                <ul>
-                    <li><h4>Compañia</h4></li>
-                    <li><a href="#">Sobre nosotros</a></li>
-                    <li><a href="#">Galeria</a></li>
-                    <li><a href="#">Trabajos</a></li>
-                    <li><a href="#">Contacto</a></li>
+    <footer class="footer">
+        <div class="footer__enlacesContainer">
+            <div class="footer__seccion footer__seccion-company"> 
+                <ul class="footer__ul">
+                    <li class="footer__li"><h4 class="footer__title">Compañia</h4></li>
+                    <li class="footer__li"><a href="#">Sobre nosotros</a></li>
+                    <li class="footer__li"><a href="#">Galeria</a></li>
+                    <li class="footer__li"><a href="#">Trabajos</a></li>
+                    <li class="footer__li"><a href="#">Contacto</a></li>
                 </ul>
             </div>
 
-            <div class="soporte"> 
-                <ul>
-                    <li><h4>Soporte</h4></li>
-                    <li><a href="#">Tutoriales</a></li>
-                    <li><a href="#">Soporte tecnico</a></li>
-                    <li><a href="#">Garantia</a></li>
+            <div class="footer__seccion footer__seccion-soporte"> 
+                <ul class="footer__ul">
+                    <li class="footer__li"><h4 class="footer__title">Soporte</h4></li>
+                    <li class="footer__li"><a href="#">Tutoriales</a></li>
+                    <li class="footer__li"><a href="#">Soporte tecnico</a></li>
+                    <li class="footer__li"><a href="#">Garantia</a></li>
                 </ul>
             </div>
 
-            <div class="legal"> 
-                <ul>
-                    <li><h4>Legal</h4></li>
-                    <li><a href="#">Cookies</a></li>
-                    <li><a href="#">Politicas</a></li>
-                    <li><a href="#">Terminos</a></li>
+            <div class="footer__seccion footer__seccion-legal"> 
+                <ul class="footer__ul">
+                    <li class="footer__li"><h4 class="footer__title">Legal</h4></li>
+                    <li class="footer__li"><a href="#">Cookies</a></li>
+                    <li class="footer__li"><a href="#">Politicas</a></li>
+                    <li class="footer__li"><a href="#">Terminos</a></li>
                 </ul>
             </div>
 
-            <div class="aplicacion"> 
-                <!--Aca van los svg para playstore y appstore-->
-                <ul>
-                    <li><h4>Descarga la app</h4></li>
-                    <li><img src="media/google-play-badge.png" alt="Ir a la playstore" width="120px"></li>
-                    <li><img src="media/appstore.svg" alt="Ir a la appstore" width="120px"></li>
+            <div class="footer__seccion footer__seccion-aplicacion"> 
+                <ul class="footer__ul">
+                    <li class="footer__li"><h4 class="footer__title">Descarga la app</h4></li>
+                    <li class="footer__li"><img class="footer__svg" src="media/google-play-badge.png" alt="Ir a la playstore" width="120px"></li>
+                    <li class="footer__li"><img class="footer__svg" src="media/appstore.svg" alt="Ir a la appstore" width="120px"></li>
                 </ul>
             </div>
         </div>
 
-        <div class="downFooter">
-            <div>
-                <p>© 2021 Clicky Ar. All rights reserved</p>
+        <div class="footer__socialContainer">
+            <div class="footer__rightsContainer">
+                <p class="footer__rights">© 2021 Clicky Ar. All rights reserved</p>
             </div>
 
-            <div class="social"> <!--Imagenes hipervinculo que llevan a cada red social de la empresa-->
-                <div><i class="fab fa-instagram"></i></div>
-                <div><i class="fab fa-facebook-square"></i></div>
-                <div><i class="fab fa-twitter"></i></div>
-                <div><a href="https://github.com/Poloni141/Clicky-Project"><i class="fab fa-github"></i></a></div>
+            <div class="footer__social"> <!--Imagenes hipervinculo que llevan a cada red social de la empresa-->
+                <div class="footer__iconBox"><i class="fab fa-instagram"></i></div>
+                <div class="footer__iconBox"><i class="fab fa-facebook-square"></i></div>
+                <div class="footer__iconBox"><i class="fab fa-twitter"></i></div>
+                <div class="footer__iconBox"><a href="https://github.com/Poloni141/Clicky-Project"><i class="fab fa-github"></i></a></div>
             </div>
         </div>
     </footer>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/js/bootstrap.min.js" integrity="sha384-PsUw7Xwds7x08Ew3exXhqzbhuEYmA2xnwc8BuD6SEr+UmEHlX8/MCltYEodzWA4u" crossorigin="anonymous"></script>
 </body>
 </html>

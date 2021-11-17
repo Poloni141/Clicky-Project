@@ -4,11 +4,14 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Teclados personalizados pre-ensamblados">
-    <meta name="keywords" content="keyboards, teclados, custom keyboards, teclados personalizados">
-    <title>Clicky - Keyboards</title>
+    <title>Clicky</title>
 
     <link rel="stylesheet" href="style/style.css">
+
+    <link rel="apple-touch-icon" sizes="180x180" href="media/favicon/apple-touch-icon.pngNo">
+    <link rel="icon" type="image/png" sizes="32x32" href="media/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="media/favicon/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -16,335 +19,337 @@
     <script src="https://kit.fontawesome.com/3bf9f8b441.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <header>
-        <nav>
-            <div class="leftMenu">
-                <div class="sideMenu"><i class="fas fa-bars"></i></div>
-                <h1 class="title">Clicky</h1>
-                <ul>
-                    <li class="listInline"><a href="index.html">Inicio</a></li>
-                    <li class="listInline"><a href="" class="shop">Shop</a>
-                        <ul class="menu">
-                            <li><a href="switches.html">Switches</a></li>
-                            <li><a href="keycaps.html">Keycaps</a></li>
-                            <li><a href="cables.html">Cables</a></li>
-                            <li><a href="keyboards.html">Teclados</a></li>
-                            <li><a href="case.html">Cases</a></li>
-                            <li><a href="tools.html">Herramientas</a></li>
+    <header class="header">
+        <nav class="header__nav">
+            <div class="header__container">
+                <div class="header__menuBtn"><i class="fas fa-bars"></i></div>
+                <h1 class="header__title">Clicky</h1>
+                <ul class="header__listaPrincipal">
+                    <li class="header__seccion"><a href="index.html">Inicio</a></li>
+                    <li class="header__seccion"><a href="" class="shop">Shop</a>
+                        <ul class="header__listaSecundaria">
+                            <li class="header__opcion"><a href="switches.html">Switches</a></li>
+                            <li class="header__opcion"><a href="keycaps.html">Keycaps</a></li>
+                            <li class="header__opcion"><a href="cables.html">Cables</a></li>
+                            <li class="header__opcion"><a href="keyboards.html">Teclados</a></li>
+                            <li class="header__opcion"><a href="case.html">Cases</a></li>
+                            <li class="header__opcion"><a href="tools.html">Herramientas</a></li>
                         </ul>
                     </li>
 
-                    <li class="listInline"><a href="#contacto">Soporte</a></li>
+                    <li class="header__opcion"><a href="#contacto">Soporte</a></li>
                 </ul>
             </div>
 
-            <div class="registerLogin"> <!--Lista desplegable de las categorias-->
-                <a href="login.html" class="loginBtn">Iniciar sesion</a>
-                <a href="#" class="registerBtn">Registrarse</a>
+            <div class="header__registerLogin"> <!--Lista desplegable de las categorias-->
+                <a href="login.html" class="header__loginBtn">Iniciar sesion</a>
+                <a href="#" class="header__registerBtn">Registrarse</a>
             </div>
         </nav>
     </header>
     
     <main>
         <section class="categorieTitle"> 
-            <h2>Cables</h2>
-            <p>Aqui podras encontrar todo tipo de cable para tu teclado</p>
+            <h2 class="categorieTitle__title">Teclados</h2>
+            <p class="categorieTitle__subTitle">Aqui podras encontrar todo tipo de cable para tu teclado</p>
         </section>
 
         <section class="items">
-                <div class="itemCard card01">
-                    <img src="media/teclado2.jpg" alt="Imagen de cable azul y amarillo">
+                <div class="items__itemCard items__itemCard-card01">
+                    <img class="items__imagen" src="media/Teclado1.jpg" alt="Imagen de cable azul y amarillo">
 
-                    <div class="itemInfoContainer">
-                        <div class="itemInfo">
-                            <h2>Tokyo</h2>
-                            <p>Teclado mecanico 75% pre-ensamblado color blanco con detalles en rojo. Switches Linear Red</p>
+                    <div class="items__info">
+                        <div class="items__text">
+                            <h2 class="items__title">Bazooka</h2>
+                            <p class="items__description">Cable custom hecho a mano rosa, mallado de tela y ficha de aviador a USB Type C</p>
                         </div>
 
-                        <div class="itemBtn">
-                            <a href="#">Comprar</a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="itemCard card02">
-                    <img src="media/teclado6.jpg" alt="Imagen de cable azul y amarillo">
-
-                    <div class="itemInfoContainer">
-                        <div class="itemInfo">
-                            <h2>Machine</h2>
-                            <p>Teclado mecanico bluetooth 75% pre-ensamblado color negro. Switches Tactile Brown</p>
-                        </div>
-
-                        <div class="itemBtn">
-                            <a href="#">Comprar</a>
+                        <div class="items__btn">
+                            <a class="items__link" href="#">Comprar</a>
                         </div>
                     </div>
                 </div>
 
-                <div class="itemCard card03">
-                    <img src="media/teclado4.jpg" alt="Imagen de cable azul y amarillo">
+                <div class="items__itemCard items__itemCard-card02">
+                    <img class="items__imagen" src="media/teclado2.jpg" alt="Imagen de cable azul y amarillo">
 
-                    <div class="itemInfoContainer">
-                        <div class="itemInfo">
-                            <h2>Orange</h2>
-                            <p>Teclado mecanico 75% pre-ensamblado color blanco con detalles naranjas y negro. Switches Optic Red</p>
+                    <div class="items__info">
+                        <div class="items__text">
+                            <h2 class="items__title">Bazooka</h2>
+                            <p class="items__description">Cable custom hecho a mano rosa, mallado de tela y ficha de aviador a USB Type C</p>
                         </div>
 
-                        <div class="itemBtn">
-                            <a href="#">Comprar</a>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="itemCard card04">
-                    <img src="media/teclado9.jpg" alt="Imagen de cable azul y amarillo">
-
-                    <div class="itemInfoContainer">
-                        <div class="itemInfo">
-                            <h2>Starry Sky</h2>
-                            <p>Teclado mecanico 65% pre-ensamblado color violeta con detalles en amarillo y celeste. Switches Clicky Blue</p>
-                        </div>
-
-                        <div class="itemBtn">
-                            <a href="#">Comprar</a>
+                        <div class="items__btn">
+                            <a class="items__link" href="#">Comprar</a>
                         </div>
                     </div>
                 </div>
 
-                <div class="itemCard card05">
-                    <img src="media/teclado5.jpg" alt="Imagen de cable azul y amarillo">
+                <div class="items__itemCard items__itemCard-card03">
+                    <img class="items__imagen" src="media/teclado3.jpg" alt="Imagen de cable azul y amarillo">
 
-                    <div class="itemInfoContainer">
-                        <div class="itemInfo">
-                            <h2>Aqua</h2>
-                            <p>Teclado mecanico 75% pre-ensamblado color verde agua. Switches Linear Brown</p>
+                    <div class="items__info">
+                        <div class="items__text">
+                            <h2 class="items__title">Bazooka</h2>
+                            <p class="items__description">Cable custom hecho a mano rosa, mallado de tela y ficha de aviador a USB Type C</p>
                         </div>
 
-                        <div class="itemBtn">
-                            <a href="#">Comprar</a>
-                        </div>
-                    </div>
-                </div>
-                    
-                <div class="itemCard card06">
-                    <img src="media/teclado3.jpg" alt="Imagen de cable azul y amarillo">
-
-                    <div class="itemInfoContainer">
-                        <div class="itemInfo">
-                            <h2>Clear Forest</h2>
-                            <p>Teclado mecanico bluetooth 75% pre-ensamblado color blanco con detalles en verde oscuro. Switches Linear Platinium</p>
-                        </div>
-
-                        <div class="itemBtn">
-                            <a href="#">Comprar</a>
+                        <div class="items__btn">
+                            <a class="items__link" href="#">Comprar</a>
                         </div>
                     </div>
                 </div>
 
-                <div class="itemCard card07">
-                    <img src="media/teclado10.jpg" alt="Imagen de cable azul y amarillo">
+                <div class="items__itemCard items__itemCard-card04">
+                    <img class="items__imagen" src="media/teclado4.jpg" alt="Imagen de cable azul y amarillo">
 
-                    <div class="itemInfoContainer">
-                        <div class="itemInfo">
-                            <h2>Dark Forest</h2>
-                            <p>Teclado mecanico bluetooth 75% pre-ensamblado color negro con detalles en verde oscuro y amarillo. Switches Linear Platinium</p>
+                    <div class="items__info">
+                        <div class="items__text">
+                            <h2 class="items__title">Bazooka</h2>
+                            <p class="items__description">Cable custom hecho a mano rosa, mallado de tela y ficha de aviador a USB Type C</p>
                         </div>
 
-                        <div class="itemBtn">
-                            <a href="#">Comprar</a>
+                        <div class="items__btn">
+                            <a class="items__link" href="#">Comprar</a>
                         </div>
                     </div>
                 </div>
 
-                <div class="itemCard card08">
-                    <img src="media/teclado7.jpg" alt="Imagen de cable azul y amarillo">
+                <div class="items__itemCard items__itemCard-card05">
+                    <img class="items__imagen" src="media/teclado5.jpg" alt="Imagen de cable azul y amarillo">
 
-                    <div class="itemInfoContainer">
-                        <div class="itemInfo">
-                            <h2>2000's</h2>
-                            <p>Teclado mecanico 85% pre-ensamblado color crema y detalles marron de los 2000. Switches Clicky Blue</p>
+                    <div class="items__info">
+                        <div class="items__text">
+                            <h2 class="items__title">Bazooka</h2>
+                            <p class="items__description">Cable custom hecho a mano rosa, mallado de tela y ficha de aviador a USB Type C</p>
                         </div>
 
-                        <div class="itemBtn">
-                            <a href="#">Comprar</a>
+                        <div class="items__btn">
+                            <a class="items__link" href="#">Comprar</a>
                         </div>
                     </div>
                 </div>
                     
-                <div class="itemCard card09">
-                    <img src="media/teclado8.jpg" alt="Imagen de cable azul y amarillo">
+                <div class="items__itemCard items__itemCard-card06">
+                    <img class="items__imagen" src="media/teclado6.jpg" alt="Imagen de cable azul y amarillo">
 
-                    <div class="itemInfoContainer">
-                        <div class="itemInfo">
-                            <h2>Minimal</h2>
-                            <p>Teclado mecanico bluetooth 75% pre-ensamblado color blanco con detalles en negro. Switches Linear Brown</p>   
+                    <div class="items__info">
+                        <div class="items__text">
+                            <h2 class="items__title">Bazooka</h2>
+                            <p class="items__description">Cable custom hecho a mano rosa, mallado de tela y ficha de aviador a USB Type C</p>
                         </div>
 
-                        <div class="itemBtn">
-                            <a href="#">Comprar</a>
+                        <div class="items__btn">
+                            <a class="items__link" href="#">Comprar</a>
                         </div>
                     </div>
                 </div>
 
-                <div class="itemCard card10">
-                    <img src="media/Teclado1.jpg" alt="Imagen de cable azul y amarillo">
+                <div class="items__itemCard items__itemCard-card07">
+                    <img class="items__imagen" src="media/teclado7.jpg" alt="Imagen de cable azul y amarillo">
 
-                    <div class="itemInfoContainer">
-                        <div class="itemInfo">
-                            <h2>Storm</h2>
-                            <p>Teclado mecanico 75% pre-ensamblado color azul con detalles en violeta. Switches Linear Red</p>  
+                    <div class="items__info">
+                        <div class="items__text">
+                            <h2 class="items__title">Bazooka</h2>
+                            <p class="items__description">Cable custom hecho a mano rosa, mallado de tela y ficha de aviador a USB Type C</p>
                         </div>
 
-                        <div class="itemBtn">
-                            <a href="#">Comprar</a>
+                        <div class="items__btn">
+                            <a class="items__link" href="#">Comprar</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="items__itemCard items__itemCard-card08">
+                    <img class="items__imagen" src="media/teclado8.jpg" alt="Imagen de cable azul y amarillo">
+
+                    <div class="items__info">
+                        <div class="items__text">
+                            <h2 class="items__title">Bazooka</h2>
+                            <p class="items__description">Cable custom hecho a mano rosa, mallado de tela y ficha de aviador a USB Type C</p>
+                        </div>
+
+                        <div class="items__btn">
+                            <a class="items__link" href="#">Comprar</a>
+                        </div>
+                    </div>
+                </div>
+                    
+                <div class="items__itemCard items__itemCard-card09">
+                    <img class="items__imagen" src="media/teclado9.jpg" alt="Imagen de cable azul y amarillo">
+
+                    <div class="items__info">
+                        <div class="items__text">
+                            <h2 class="items__title">Bazooka</h2>
+                            <p class="items__description">Cable custom hecho a mano rosa, mallado de tela y ficha de aviador a USB Type C</p>
+                        </div>
+
+                        <div class="items__btn">
+                            <a class="items__link" href="#">Comprar</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="items__itemCard items__itemCard-card10">
+                    <img class="items__imagen" src="media/teclado10.jpg" alt="Imagen de cable azul y amarillo">
+
+                    <div class="items__info">
+                        <div class="items__text">
+                            <h2 class="items__title">Bazooka</h2>
+                            <p class="items__description">Cable custom hecho a mano rosa, mallado de tela y ficha de aviador a USB Type C</p>
+                        </div>
+
+                        <div class="items__btn">
+                            <a class="items__link" href="#">Comprar</a>
                         </div>
                     </div>
                 </div>
         </section>
            
         <section class="categorieTitle"> 
-            <h2>Lo mas vendidos</h2>
-            <p>La sensacion del momento</p>
+            <h2 class="categorieTitle__title">Lo mas vendidos</h2>
+            <p class="categorieTitle__subTitle">La sensacion del momento</p>
         </section>
 
         <section class="recomendados"> 
-            <div class="recomendedCard">
-                <a href="#"><img src="media/teclado2.jpg" alt=""></a>
+            <div class="recomendados__card">
+                <a class="recomendados__btn" href="#"><img class="recomendados__imagen" src="media/teclado2.jpg" alt=""></a>
             </div>
 
-            <div class="recomendedCard">
-                <a href="#"><img src="media/switch.jpg" alt=""></a>
+            <div class="recomendados__card">
+                <a class="recomendados__btn" href="#"><img class="recomendados__imagen" src="media/switch.jpg" alt=""></a>
             </div>
 
-            <div class="recomendedCard">
-                <a href="#"><img src="media/cableamarillo.jpg" alt=""></a>
+            <div class="recomendados__card">
+                <a class="recomendados__btn" href="#"><img class="recomendados__imagen" src="media/cableamarillo.jpg" alt=""></a>
             </div>
 
-            <div class="recomendedCard">
-                <a href="#"><img src="media/case1.jpg" alt=""></a>
+            <div class="recomendados__card">
+                <a class="recomendados__btn" href="#"><img class="recomendados__imagen" src="media/case1.jpg" alt=""></a>
             </div>
         </section>
 
 
-        <section class="extrasContainer"> <!--Metodos de pago, envio y garantia-->
-            <article class="card">
-                    <div class="svg">
-                        <img src="media/creditcard.svg" alt="Podes pagar con efectivo, con tarjeta de debito o credito">
+        <section class="extras"> <!--Metodos de pago, envio y garantia-->
+            <article class="extras__card">
+                    <div class="extras__svgContainer">
+                        <img class="extras__svg" src="media/creditcard.svg" alt="Podes pagar con efectivo, con tarjeta de debito o credito">
                     </div>
-                    <div class="cardText">
-                        <h3>Pagos</h3>
-                        <p>Podes pagar de la manera que vos prefieras. Aceptamos efectivo, tarjeta de credito y debito.</p>
+
+                    <div class="extras__text">
+                        <h3 class="extras__title">Pagos</h3>
+                        <p class="extras__descipcion">Podes pagar de la manera que vos prefieras. Aceptamos efectivo, tarjeta de credito y debito.</p>
                     </div>
             </article>
 
-            <article class="card">
-                    <div class="svg">
-                        <img src="media/delivery.svg" alt="Podes pagar con efectivo, con tarjeta de debito o credito">
+            <article class="extras__card">
+                    <div class="extras__svgContainer">
+                        <img class="extras__svg" src="media/delivery.svg" alt="Podes pagar con efectivo, con tarjeta de debito o credito">
                     </div>
-                    <div class="cardText">
-                        <h3>Envios</h3>
-                        <p>Podes pagar de la manera que vos prefieras. Aceptamos efectivo, tarjeta de credito y debito.</p>
+
+                    <div class="extras__text">
+                        <h3 class="extras__title">Envios</h3>
+                        <p class="extras__descipcion">Realizamos envios a todo el mundo. Lo embalaremos para que llegue sano y salvo.</p>
                     </div>
             </article>
 
-            <article class="card">
+            <article class="extras__card">
                     <!--Cambiar estos nombres ya que es diferente al modelo-->
-                    <div class="svg">
-                        <img src="media/Support.svg" alt="Podes pagar con efectivo, con tarjeta de debito o credito">
+                    <div class="extras__svgContainer">
+                        <img class="extras__svg" src="media/Support.svg" alt="Podes pagar con efectivo, con tarjeta de debito o credito">
                     </div>
+
                     <div class="cardText">
-                        <h3>Soporte</h3>
-                        <p>Podes pagar de la manera que vos prefieras. Aceptamos efectivo, tarjeta de credito y debito.</p>
+                        <h3 class="extras__title">Soporte</h3>
+                        <p class="extras__descipcion">Te brindaremos asistencia pre-venta y post-venta. Siempre estaremos para ayudarte.</p>
                     </div>
             </article>
         </section>
 
         <section id="contacto"> <!--Formulario para consultas-->
-                <div class="formulario">
-                    <h2>Contacto</h2>
-                    <form action="#">
-                        <div class="campos">
-                            <input type="text" name="nombre" placeholder="Nombre completo" required>
-                            <input type="email" name="email" placeholder="Email" required>
-                            <input type="tel" name="telefono" placeholder="Telefono" required> 
+                <div class="contacto__formulario">
+                    <h2 class="contacto__title">Contacto</h2>
+                    <form class="contacto__form" action="#">
+                        <div class="contacto__inputs">
+                            <input class="contacto__input contacto__input-nombre" type="text" name="nombre" placeholder="Nombre completo" required>
+                            <input class="contacto__input contacto__input-email" type="email" name="email" placeholder="Email" required>
+                            <input class="contacto__input contacto__input-telefono"type="tel" name="telefono" placeholder="Telefono" required> 
                         </div>
 
-                        <div class="textArea">
-                            <textarea name="consulta" id="" cols="30" rows="10" placeholder="Escriba aqui su consulta..." required></textarea>
+                        <div class="contacto__textAreaContainer">
+                            <textarea class="contacto__textArea" name="consulta" id="" cols="30" rows="10" placeholder="Escriba aqui su consulta..." required></textarea>
                         </div>
 
-                        <div class="enviar">
-                            <input type="submit" value="Enviar" id="sendBtn">
-                            <input type="checkbox" id="cbox">Suscribirse a las noticias
+                        <div class="contacto__enviar">
+                            <input class="contacto__enviarBtn" type="submit" value="Enviar" id="sendBtn">
+                            <input class="contacto__checkbox" type="checkbox" id="cbox">Suscribirse a las noticias
                         </div>
                     </form>
                 </div>
 
-                <div class="sideBarForm"> <!--Esto va estar del lado derecho como informacion adicional al costado del formulario-->
-                    <div>
-                        <h2>Hola !</h2>
-                        <p>Nos complace poder ayudarte pero necesitamos completes el formulario y te estaremos respondiendo dentro de las 24 horas.
+                <div class="contacto__aside"> <!--Esto va estar del lado derecho como informacion adicional al costado del formulario-->
+                    <div class="contacto__info">
+                        <h2 class="contacto__asideTitle">Hola !</h2>
+                        <p class="contacto__text">Nos complace poder ayudarte pero necesitamos completes el formulario y te estaremos respondiendo dentro de las 24 horas.
                         </p>
-                        <p><span><i class="far fa-envelope"></i>Clicky@gmail.com</span></p>
-                        <p><span><i class="fas fa-phone"></i>+54 011-6515-7749</span></p>
-                        <p><span><i class="far fa-map"></i>Av. Lavarden 157 CABA</span></p>
+                        <p class="contacto__text"><span><i class="far fa-envelope"></i>Clicky@gmail.com</span></p>
+                        <p class="contacto__text"><span><i class="fas fa-phone"></i>+54 011-6515-7749</span></p>
+                        <p class="contacto__text"><span><i class="far fa-map"></i>Av. Lavarden 157 CABA</span></p>
                     </div>
                 </div>
         </section>
     </main>
 
 
-    <footer>
-        <div class="upFooter">
-            <div class="company"> 
-                <ul>
-                    <li><h4>Compañia</h4></li>
-                    <li><a href="#">Sobre nosotros</a></li>
-                    <li><a href="#">Galeria</a></li>
-                    <li><a href="#">Trabajos</a></li>
-                    <li><a href="#">Contacto</a></li>
+    <footer class="footer">
+        <div class="footer__enlacesContainer">
+            <div class="footer__company"> 
+                <ul class="footer__ul">
+                    <li class="footer__li"><h4 class="footer__title">Compañia</h4></li>
+                    <li class="footer__li"><a href="#">Sobre nosotros</a></li>
+                    <li class="footer__li"><a href="#">Galeria</a></li>
+                    <li class="footer__li"><a href="#">Trabajos</a></li>
+                    <li class="footer__li"><a href="#">Contacto</a></li>
                 </ul>
             </div>
 
-            <div class="soporte"> 
-                <ul>
-                    <li><h4>Soporte</h4></li>
-                    <li><a href="#">Tutoriales</a></li>
-                    <li><a href="#">Soporte tecnico</a></li>
-                    <li><a href="#">Garantia</a></li>
+            <div class="footer__soporte"> 
+                <ul class="footer__ul">
+                    <li class="footer__li"><h4 class="footer__title">Soporte</h4></li>
+                    <li class="footer__li"><a href="#">Tutoriales</a></li>
+                    <li class="footer__li"><a href="#">Soporte tecnico</a></li>
+                    <li class="footer__li"><a href="#">Garantia</a></li>
                 </ul>
             </div>
 
-            <div class="legal"> 
-                <ul>
-                    <li><h4>Legal</h4></li>
-                    <li><a href="#">Cookies</a></li>
-                    <li><a href="#">Politicas</a></li>
-                    <li><a href="#">Terminos</a></li>
+            <div class="footer__legal"> 
+                <ul class="footer__ul">
+                    <li class="footer__li"><h4 class="footer__title">Legal</h4></li>
+                    <li class="footer__li"><a href="#">Cookies</a></li>
+                    <li class="footer__li"><a href="#">Politicas</a></li>
+                    <li class="footer__li"><a href="#">Terminos</a></li>
                 </ul>
             </div>
 
-            <div class="aplicacion"> 
-                <!--Aca van los svg para playstore y appstore-->
-                <ul>
-                    <li><h4>Descarga la app</h4></li>
-                    <li><img src="media/google-play-badge.png" alt="Ir a la playstore" width="120px"></li>
-                    <li><img src="media/appstore.svg" alt="Ir a la appstore" width="120px"></li>
+            <div class="footer__aplicacion"> 
+                <ul class="footer__ul">
+                    <li class="footer__li"><h4 class="footer__title">Descarga la app</h4></li>
+                    <li class="footer__li"><img class="footer__svg" src="media/google-play-badge.png" alt="Ir a la playstore" width="120px"></li>
+                    <li class="footer__li"><img class="footer__svg" src="media/appstore.svg" alt="Ir a la appstore" width="120px"></li>
                 </ul>
             </div>
         </div>
 
-        <div class="downFooter">
-            <div>
-                <p>© 2021 Clicky Ar. All rights reserved</p>
+        <div class="footer__socialContainer">
+            <div class="footer__rightsContainer">
+                <p class="footer__rights">© 2021 Clicky Ar. All rights reserved</p>
             </div>
 
-            <div class="social"> <!--Imagenes hipervinculo que llevan a cada red social de la empresa-->
-                <div><i class="fab fa-instagram"></i></div>
-                <div><i class="fab fa-facebook-square"></i></div>
-                <div><i class="fab fa-twitter"></i></div>
-                <div><a href="https://github.com/Poloni141/Clicky-Project"><i class="fab fa-github"></i></a></div>
+            <div class="footer__social"> <!--Imagenes hipervinculo que llevan a cada red social de la empresa-->
+                <div class="footer__iconBox"><i class="fab fa-instagram"></i></div>
+                <div class="footer__iconBox"><i class="fab fa-facebook-square"></i></div>
+                <div class="footer__iconBox"><i class="fab fa-twitter"></i></div>
+                <div class="footer__iconBox"><a href="https://github.com/Poloni141/Clicky-Project"><i class="fab fa-github"></i></a></div>
             </div>
         </div>
     </footer>
