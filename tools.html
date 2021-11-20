@@ -26,7 +26,7 @@
                 <h1 class="header__title">Clicky</h1>
                 <ul class="header__listaPrincipal">
                     <li class="header__seccion"><a href="index.html">Inicio</a></li>
-                    <li class="header__seccion"><a href="" class="shop">Shop</a>
+                    <li class="header__seccion header__seccion-menu"><a href="" class="shop">Shop</a>
                         <ul class="header__listaSecundaria">
                             <li class="header__opcion"><a href="switches.html">Switches</a></li>
                             <li class="header__opcion"><a href="keycaps.html">Keycaps</a></li>
@@ -37,7 +37,7 @@
                         </ul>
                     </li>
 
-                    <li class="header__opcion"><a href="#contacto">Soporte</a></li>
+                    <li class="header__seccion"><a href="#contacto">Soporte</a></li>
                 </ul>
             </div>
 
@@ -236,44 +236,44 @@
             </article>
         </section>
 
-        <section id="contacto"> <!--Formulario para consultas-->
-                <div class="contacto__formulario">
-                    <h2 class="contacto__title">Contacto</h2>
-                    <form class="contacto__form" action="#">
-                        <div class="contacto__inputs">
-                            <input class="contacto__input contacto__input-nombre" type="text" name="nombre" placeholder="Nombre completo" required>
-                            <input class="contacto__input contacto__input-email" type="email" name="email" placeholder="Email" required>
-                            <input class="contacto__input contacto__input-telefono"type="tel" name="telefono" placeholder="Telefono" required> 
-                        </div>
-
-                        <div class="contacto__textAreaContainer">
-                            <textarea class="contacto__textArea" name="consulta" id="" cols="30" rows="10" placeholder="Escriba aqui su consulta..." required></textarea>
-                        </div>
-
-                        <div class="contacto__enviar">
-                            <input class="contacto__enviarBtn" type="submit" value="Enviar" id="sendBtn">
-                            <input class="contacto__checkbox" type="checkbox" id="cbox">Suscribirse a las noticias
-                        </div>
-                    </form>
-                </div>
-
-                <div class="contacto__aside"> <!--Esto va estar del lado derecho como informacion adicional al costado del formulario-->
-                    <div class="contacto__info">
-                        <h2 class="contacto__asideTitle">Hola !</h2>
-                        <p class="contacto__text">Nos complace poder ayudarte pero necesitamos completes el formulario y te estaremos respondiendo dentro de las 24 horas.
-                        </p>
-                        <p class="contacto__text"><span><i class="far fa-envelope"></i>Clicky@gmail.com</span></p>
-                        <p class="contacto__text"><span><i class="fas fa-phone"></i>+54 011-6515-7749</span></p>
-                        <p class="contacto__text"><span><i class="far fa-map"></i>Av. Lavarden 157 CABA</span></p>
+        <section class="contacto" id="contacto"> <!--Formulario para consultas-->
+            <div class="contacto__formulario">
+                <h2 class="contacto__title">Contacto</h2>
+                <form class="contacto__form" action="#">
+                    <div class="contacto__inputs">
+                        <input class="contacto__input contacto__input-nombre" type="text" name="nombre" placeholder="Nombre completo" required>
+                        <input class="contacto__input contacto__input-email" type="email" name="email" placeholder="Email" required>
+                        <input class="contacto__input contacto__input-telefono"type="tel" name="telefono" placeholder="Telefono" required> 
                     </div>
+
+                    <div class="contacto__textAreaContainer">
+                        <textarea class="contacto__textArea" name="consulta" id="" cols="30" rows="10" placeholder="Escriba aqui su consulta..." required></textarea>
+                    </div>
+
+                    <div class="contacto__enviar">
+                        <input class="contacto__enviarBtn" type="submit" value="Enviar" id="sendBtn">
+                        <input class="contacto__checkbox" type="checkbox" id="cbox">Suscribirse a las noticias
+                    </div>
+                </form>
+            </div>
+
+            <div class="contacto__aside"> <!--Esto va estar del lado derecho como informacion adicional al costado del formulario-->
+                <div class="contacto__info">
+                    <h2 class="contacto__asideTitle">Hola !</h2>
+                    <p class="contacto__text">Nos complace poder ayudarte pero necesitamos completes el formulario y te estaremos respondiendo dentro de las 24 horas.
+                    </p>
+                    <p class="contacto__text"><span class="contacto__span"><i class="far fa-envelope"></i>Clicky@gmail.com</span></p>
+                    <p class="contacto__text"><span class="contacto__span"><i class="fas fa-phone"></i>+54 011-6515-7749</span></p>
+                    <p class="contacto__text"><span class="contacto__span"><i class="far fa-map"></i>Av. Lavarden 157 CABA</span></p>
                 </div>
+            </div>
         </section>
     </main>
 
 
     <footer class="footer">
         <div class="footer__enlacesContainer">
-            <div class="footer__company"> 
+            <div class="footer__seccion footer__seccion-company"> 
                 <ul class="footer__ul">
                     <li class="footer__li"><h4 class="footer__title">Compañia</h4></li>
                     <li class="footer__li"><a href="#">Sobre nosotros</a></li>
@@ -283,7 +283,7 @@
                 </ul>
             </div>
 
-            <div class="footer__soporte"> 
+            <div class="footer__seccion footer__seccion-soporte"> 
                 <ul class="footer__ul">
                     <li class="footer__li"><h4 class="footer__title">Soporte</h4></li>
                     <li class="footer__li"><a href="#">Tutoriales</a></li>
@@ -292,7 +292,7 @@
                 </ul>
             </div>
 
-            <div class="footer__legal"> 
+            <div class="footer__seccion footer__seccion-legal"> 
                 <ul class="footer__ul">
                     <li class="footer__li"><h4 class="footer__title">Legal</h4></li>
                     <li class="footer__li"><a href="#">Cookies</a></li>
@@ -301,7 +301,7 @@
                 </ul>
             </div>
 
-            <div class="footer__aplicacion"> 
+            <div class="footer__seccion footer__seccion-aplicacion"> 
                 <ul class="footer__ul">
                     <li class="footer__li"><h4 class="footer__title">Descarga la app</h4></li>
                     <li class="footer__li"><img class="footer__svg" src="media/google-play-badge.png" alt="Ir a la playstore" width="120px"></li>
