@@ -113,7 +113,7 @@ body .header .header__nav .header__container .header__listaPrincipal .header__se
 
 body .header .header__nav .header__container .header__listaPrincipal .header__seccion-menu .header__listaSecundaria .header__opcion {
   width: 100%;
-  padding: 12px;
+  padding: 24px;
   color: black;
 }
 
@@ -123,13 +123,13 @@ body .header .header__nav .header__registerLogin {
 
 body .header .header__nav .header__registerLogin .header__loginBtn {
   font-size: 0.9rem;
-  color: #296BFF;
   padding: 12.8px 24px;
   border-radius: 6px;
+  margin-right: 20px;
+  color: #296BFF;
   background-color: rgba(41, 107, 255, 0.2);
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
-  margin-right: 20px;
 }
 
 body .header .header__nav .header__registerLogin .header__loginBtn:hover {
@@ -169,7 +169,7 @@ body main .categories {
 }
 
 body main .categories .categories__categorie {
-  margin: 32px 0 32px 0;
+  margin: 32px 0;
   width: 97%;
   height: 251.6px;
   border-radius: 6px;
@@ -184,14 +184,39 @@ body main .categories .categories__categorie {
   box-shadow: 3px 6px 5px -1px rgba(0, 0, 0, 0.21);
 }
 
+@media only screen and (max-width: 480px) {
+  body main .categories .categories__categorie {
+    width: 90%;
+    height: 630px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
 body main .categories .categories__categorie .categories__imgContainer .categories__img {
   border-radius: 6px 0 0 6px;
   height: 100%;
   width: 350px;
 }
 
+@media only screen and (max-width: 480px) {
+  body main .categories .categories__categorie .categories__imgContainer .categories__img {
+    border-radius: 6px 6px 0 0;
+    width: 100%;
+    height: 300px;
+  }
+}
+
 body main .categories .categories__categorie .categories__info {
   margin: 32px;
+}
+
+@media only screen and (max-width: 1367px) {
+  body main .categories .categories__categorie .categories__info {
+    height: 150px;
+  }
 }
 
 body main .categories .categories__categorie .categories__info .categories__title {
@@ -204,13 +229,12 @@ body main .categories .categories__categorie .categories__info .categories__desc
 }
 
 body main .categories .categories__categorie .categories__info .categories__btn {
+  display: inline-block;
   font-size: 0.85rem;
-  color: #296BFF;
   padding: 9.6px;
   border-radius: 6px;
+  color: #296BFF;
   background-color: rgba(41, 107, 255, 0.2);
-  position: relative;
-  top: 40px;
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
 }
@@ -235,7 +259,7 @@ body main .comentarys {
 
 body main .comentarys .comentarys__container {
   margin: 70px 0 70px 0;
-  width: 80%;
+  width: 95%;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 1fr 1fr 1fr 1fr;
@@ -249,6 +273,25 @@ body main .comentarys .comentarys__container {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  /*@media only screen and (max-width: $breakpoint-notebookGrande) {
+                    grid-template-columns: 1fr 1fr ;
+                    grid-template-rows: 90px auto auto;
+                    grid-template-areas: "comentarys__titleContainer comentarys__titleContainer"
+                                         "comentarys__card-card1     comentarys__card-card2"     
+                                         "comentarys__card-card3     comentarys__card-card4";
+                }*/
+}
+
+@media only screen and (max-width: 480px) {
+  body main .comentarys .comentarys__container {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    -ms-grid-rows: 90px auto auto auto auto;
+        grid-template-rows: 90px auto auto auto auto;
+    grid-column-gap: 10px;
+    grid-row-gap: 30px;
+        grid-template-areas: "comentarys__titleContainer" "comentarys__card-card1"      "comentarys__card-card2"      "comentarys__card-card3"      "comentarys__card-card4";
+  }
 }
 
 body main .comentarys .comentarys__container .comentarys__titleContainer {
@@ -260,6 +303,7 @@ body main .comentarys .comentarys__container .comentarys__titleContainer {
 
 body main .comentarys .comentarys__container .comentarys__titleContainer .comentarys__title {
   font-size: 2.3rem;
+  font-weight: bold;
 }
 
 body main .comentarys .comentarys__container .comentarys__card-card1 {
@@ -370,6 +414,15 @@ body main .extras {
           justify-content: space-evenly;
 }
 
+@media only screen and (max-width: 480px) {
+  body main .extras {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
 body main .extras .extras__card {
   background-color: #fff;
   width: 500px;
@@ -392,9 +445,31 @@ body main .extras .extras__card {
   box-shadow: 3px 6px 5px -1px rgba(0, 0, 0, 0.21);
 }
 
+@media only screen and (max-width: 1367px) {
+  body main .extras .extras__card {
+    width: 400px;
+    height: 450px;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  body main .extras .extras__card {
+    width: 90%;
+    height: 370px;
+    margin: 20px 0;
+  }
+}
+
 body main .extras .extras__card .extras__svgContainer .extras__svg {
   width: 200px;
   height: 200px;
+}
+
+@media only screen and (max-width: 480px) {
+  body main .extras .extras__card .extras__svgContainer .extras__svg {
+    width: 150px;
+    height: 150px;
+  }
 }
 
 body main .extras .extras__card .extras__info {
@@ -522,6 +597,12 @@ body main .contacto .contacto__aside .contacto__info {
   height: 500px;
 }
 
+@media only screen and (max-width: 1367px) {
+  body main .contacto .contacto__aside .contacto__info {
+    width: 500px;
+  }
+}
+
 body main .contacto .contacto__aside .contacto__info .contacto__asideTitle {
   font-size: 3.8rem;
   color: #fff;
@@ -561,6 +642,7 @@ body main .categorieTitle {
 
 body main .categorieTitle .categorieTitle__title {
   font-size: 2.3rem;
+  font-weight: bold;
 }
 
 body main .categorieTitle .categorieTitle__title .categorieTitle__subTitle {
@@ -577,6 +659,15 @@ body main .items {
   -ms-grid-rows: 1fr 1fr;
       grid-template-rows: 1fr 1fr;
   grid-row-gap: 70px;
+}
+
+@media only screen and (max-width: 1367px) {
+  body main .items {
+    -ms-grid-columns: 1fr 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    -ms-grid-rows: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+  }
 }
 
 body main .items .items__itemCard {
@@ -633,10 +724,10 @@ body main .items .items__itemCard .items__info .items__text .items__description 
 }
 
 body main .items .items__itemCard .items__info .items__btn .items__link {
-  color: #296BFF;
   font-size: 0.9rem;
   padding: 12.8px 20px;
   border-radius: 6px;
+  color: #296BFF;
   background-color: rgba(41, 107, 255, 0.2);
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
@@ -661,7 +752,6 @@ body main .recomendados .recomendados__card {
   border-radius: 10px;
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
-  background-color: #296BFF;
 }
 
 body main .recomendados .recomendados__card:hover {
@@ -675,6 +765,13 @@ body main .recomendados .recomendados__card .recomendados__btn .recomendados__im
   border-radius: 10px;
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
+}
+
+body main .recomendados .recomendados__card .recomendados__btn .recomendados__imagen:hover {
+  -webkit-box-shadow: 3px 6px 5px -1px rgba(0, 0, 0, 0.21);
+          box-shadow: 3px 6px 5px -1px rgba(0, 0, 0, 0.21);
+  -webkit-transform: scale(1.05, 1.05);
+          transform: scale(1.05, 1.05);
 }
 
 body footer {
