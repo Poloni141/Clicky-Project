@@ -70,6 +70,14 @@ body {
 
                 .header__menuBtn {
                     display: none;
+                    margin-left: 20px;
+                    .fa-bars {
+                        color: $bg-principal;
+                    }
+
+                    @media only screen and (min-width: $breakpoint-mobile) and (max-width: $breakpoint-tablet) {
+                        display: block;
+                    }
                 }
 
                 .header__title {
@@ -78,11 +86,21 @@ body {
                     font-family: 'Montserrat Alternates', sans-serif;
                     margin: 0 0 0 32px;
                     cursor: default;
+
+                    @media only screen and (min-width: $breakpoint-mobile) and (max-width: $breakpoint-tablet){
+                        margin-left: 25px;
+                    }
                 }
 
                 .header__listaPrincipal {
                     padding: 0;
                     margin-bottom: 0;  
+
+                    @media only screen and (min-width: $breakpoint-mobile) and (max-width: $breakpoint-tablet) {
+                        display: none;
+                        width: 0;
+                    }
+                    
                     .header__seccion {
                         display: inline-block;
                         margin-left: 22.4px;
@@ -122,6 +140,10 @@ body {
 
             .header__registerLogin {
                 margin-right: 32px;
+
+                @media only screen and (max-width: $breakpoint-mobile) {
+                    display: none;
+                }
 
                 .header__loginBtn {
                     font-size: 0.9rem;
@@ -166,6 +188,10 @@ body {
                 -webkit-box-shadow: 3px 6px 5px -1px rgba(0,0,0,0.21);
                 -moz-box-shadow: 3px 6px 5px -1px rgba(0,0,0,0.21);
                 box-shadow: 3px 6px 5px -1px rgba(0,0,0,0.21);
+
+                @media only screen and (max-width: $breakpoint-tablet) {
+                    height: 350px;
+                }
 
                 @media only screen and (max-width: $breakpoint-mobile) {
                     width: 90%;
@@ -236,13 +262,14 @@ body {
                 justify-items: center;
                 align-items: center;
 
-                /*@media only screen and (max-width: $breakpoint-notebookGrande) {
+                @media only screen and (max-width: $breakpoint-tablet) {
                     grid-template-columns: 1fr 1fr ;
                     grid-template-rows: 90px auto auto;
+                    grid-row-gap: 70px;
                     grid-template-areas: "comentarys__titleContainer comentarys__titleContainer"
                                          "comentarys__card-card1     comentarys__card-card2"     
                                          "comentarys__card-card3     comentarys__card-card4";
-                }*/
+                }
 
                 @media only screen and (max-width: $breakpoint-mobile) {
                     grid-template-columns: 1fr;
@@ -293,7 +320,7 @@ body {
                     -webkit-box-shadow: 3px 6px 5px -1px rgba(0,0,0,0.21);
                     -moz-box-shadow: 3px 6px 5px -1px rgba(0,0,0,0.21);
                     box-shadow: 3px 6px 5px -1px rgba(0,0,0,0.21);
-
+                    
                     .comentarys__comentary {
                         display: flex;
                         height: 50%;
@@ -341,7 +368,7 @@ body {
             align-items: center;
             justify-content: space-evenly;
 
-            @media only screen and (max-width: $breakpoint-mobile) {
+            @media only screen and (min-width: $breakpoint-mobile) and (max-width: $breakpoint-tablet) {
                 flex-direction: column;
             }
 
@@ -361,6 +388,12 @@ body {
                 @media only screen and (max-width: $breakpoint-desktopM) {
                     width: 400px;
                     height: 450px;
+                }
+
+                @media only screen and (max-width: $breakpoint-tablet) {
+                    width: 90%;
+                    height: 470px;
+                    margin: 20px 0;
                 }
 
                 @media only screen and (max-width: $breakpoint-mobile) {
@@ -401,12 +434,22 @@ body {
             height: 700px;
             background-color: $bg-blanco;
 
+            @media only screen and (min-width: $breakpoint-mobile) and (max-width: $breakpoint-tablet){
+                flex-direction: column-reverse;
+                height: 1300px;
+            }
+
             .contacto__formulario {
                 width: 50%;
                 display: flex;
                 flex-direction: column;
                 justify-content: center;
                 align-items: center;
+
+                @media only screen and (min-width: $breakpoint-mobile) and (max-width: $breakpoint-tablet)  {
+                    width: 100%;
+                    padding: 40px 0;
+                }
                 
                 .contacto__form {
                     .contacto__inputs {
@@ -465,12 +508,21 @@ body {
                 justify-content: center;
                 align-items: center;
 
+                @media only screen and (min-width: $breakpoint-mobile) and (max-width: $breakpoint-tablet) {
+                    width: 100%;
+                    padding: 40px 0;
+                }
+
                 .contacto__info {
                     width: 700px;
                     height: 500px;
 
                     @media only screen and (max-width: $breakpoint-desktopM) {
                         width: 500px;
+                    }
+
+                    @media only screen and (min-width: $breakpoint-mobile) and (max-width: $breakpoint-tablet) {
+                        width: 80%;
                     }
 
                     .contacto__asideTitle {
@@ -489,6 +541,10 @@ body {
                             top: 110px;
                             margin: 30px 0 0 0;
                             color: $bg-blanco;
+
+                            @media only screen and (min-width: $breakpoint-mobile) and (max-width: $breakpoint-tablet) {
+                                top: 30px;
+                            }
                         }
                     }
 
@@ -505,6 +561,10 @@ body {
             align-items: center;
             padding: $anchoCategorie*2; //Operacion
 
+            @media only screen and (max-width: $breakpoint-mobile) {
+                padding: 60px ;
+            }
+         
             .categorieTitle__title {
                 @include section-title;
                 .categorieTitle__subTitle {
@@ -526,6 +586,18 @@ body {
                 grid-template-rows: 1fr 1fr 1fr;
             }
 
+            @media only screen and (max-width: $breakpoint-tablet) {
+                grid-template-columns: 1fr 1fr 1fr;
+                grid-template-rows: 1fr 1fr 1fr;
+            }
+
+            @media only screen and (max-width: $breakpoint-mobile) {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+            }
+
             .items__itemCard {
                 @if ($bg-blanco == #fff) {      //IF
                     background-color: $bg-blanco;
@@ -536,6 +608,14 @@ body {
                 height: 550px;
                 border-radius: 6px;
                 @include transform;
+
+                @media only screen and (max-width: $breakpoint-tablet) {
+                    width: 240px;
+                }
+
+                @media only screen and (max-width: $breakpoint-mobile) {
+                    width: 80%;
+                }
 
                 .items__imagen {
                     width: 100%;
@@ -549,9 +629,15 @@ body {
                     flex-direction: column;
                     justify-content: start;
                     align-items: center;
+
+
                     .items__text {
                         width: 85%;
                         height: 240px;
+
+                        @media only screen and (max-width: $breakpoint-mobile) {
+                            margin-top: 10px;
+                        }
 
                         .items__title {
                             margin-top: 10px;
@@ -578,6 +664,19 @@ body {
             display: grid;
             justify-items: center;
             grid-template-columns: 1fr 1fr 1fr 1fr;
+
+            @media only screen and (max-width: $breakpoint-tablet) {
+                grid-template-columns: 1fr 1fr ;
+                grid-template-rows: 1fr 1fr;
+                grid-row-gap: 70px;
+            }
+
+            @media only screen and (max-width: $breakpoint-mobile) {
+                grid-template-columns: 1fr;
+                grid-template-rows: 1fr 1fr 1fr 1fr;
+                grid-row-gap: 20px;
+            }
+
             .recomendados__card {
                 width: 300px;
                 height: 300px;
@@ -604,8 +703,12 @@ body {
             display: flex;
             flex-direction: row;
             justify-content: space-evenly;
-            align-items: center;
+            align-items: flex-start;
             padding: 60px;
+
+            @media only screen and (max-width: $breakpoint-mobile) {
+                display: block;
+            }
 
             .footer__seccion {
                 .footer__ul {
@@ -616,8 +719,16 @@ body {
                             margin-bottom: 20px;
                             color: $bg-blanco;
                         }
+                    }
+                }
+            }
+
+            .footer__seccion-aplicacion {
+                .footer__ul {
+                    .footer__li {
                         .footer__svg {
                             width: 120px;
+                            margin: 10px 0;
                         }
                     }
                 }
@@ -631,9 +742,14 @@ body {
             justify-content: space-around;
             align-items: center;
 
+            @media only screen and (max-width: $breakpoint-mobile) {
+                flex-direction: column;
+            }
+
             .footer__social {
                 display: flex;
                 flex-direction: row;
+                
             }
 
             .footer__rigthsContainer {
@@ -666,5 +782,3 @@ body {
     font-size: 1.6rem;
     color: $bg-blanco;
 }
-
-// MEDIA QUERYS
