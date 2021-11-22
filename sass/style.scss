@@ -75,7 +75,11 @@ body {
                         color: $bg-principal;
                     }
 
-                    @media only screen and (min-width: $breakpoint-mobile) and (max-width: $breakpoint-tablet) {
+                    @media only screen and (max-width: $breakpoint-tablet) {
+                        display: block;
+                    }
+
+                    @media only screen and (max-width: $breakpoint-mobile) {
                         display: block;
                     }
                 }
@@ -87,7 +91,11 @@ body {
                     margin: 0 0 0 32px;
                     cursor: default;
 
-                    @media only screen and (min-width: $breakpoint-mobile) and (max-width: $breakpoint-tablet){
+                    @media only screen and (max-width: $breakpoint-tablet){
+                        margin-left: 25px;
+                    }
+
+                    @media only screen and (max-width: $breakpoint-mobile) {
                         margin-left: 25px;
                     }
                 }
@@ -96,7 +104,12 @@ body {
                     padding: 0;
                     margin-bottom: 0;  
 
-                    @media only screen and (min-width: $breakpoint-mobile) and (max-width: $breakpoint-tablet) {
+                    @media only screen and (max-width: $breakpoint-tablet) {
+                        display: none;
+                        width: 0;
+                    }
+
+                    @media only screen and (max-width: $breakpoint-mobile) {
                         display: none;
                         width: 0;
                     }
@@ -368,7 +381,11 @@ body {
             align-items: center;
             justify-content: space-evenly;
 
-            @media only screen and (min-width: $breakpoint-mobile) and (max-width: $breakpoint-tablet) {
+            @media only screen and (max-width: $breakpoint-tablet) {
+                flex-direction: column;
+            }
+
+            @media only screen and (max-width: $breakpoint-mobile) {
                 flex-direction: column;
             }
 
@@ -434,7 +451,12 @@ body {
             height: 700px;
             background-color: $bg-blanco;
 
-            @media only screen and (min-width: $breakpoint-mobile) and (max-width: $breakpoint-tablet){
+            @media only screen and (max-width: $breakpoint-tablet) {
+                flex-direction: column-reverse;
+                height: 1300px;
+            }
+
+            @media only screen and (max-width: $breakpoint-mobile) {
                 flex-direction: column-reverse;
                 height: 1300px;
             }
@@ -446,7 +468,12 @@ body {
                 justify-content: center;
                 align-items: center;
 
-                @media only screen and (min-width: $breakpoint-mobile) and (max-width: $breakpoint-tablet)  {
+                @media only screen and (max-width: $breakpoint-tablet)  {
+                    width: 100%;
+                    padding: 40px 0;
+                }
+
+                @media only screen and (max-width: $breakpoint-mobile)  {
                     width: 100%;
                     padding: 40px 0;
                 }
@@ -508,7 +535,12 @@ body {
                 justify-content: center;
                 align-items: center;
 
-                @media only screen and (min-width: $breakpoint-mobile) and (max-width: $breakpoint-tablet) {
+                @media only screen and (max-width: $breakpoint-tablet) {
+                    width: 100%;
+                    padding: 40px 0;
+                }
+
+                @media only screen and (max-width: $breakpoint-mobile) {
                     width: 100%;
                     padding: 40px 0;
                 }
@@ -692,6 +724,38 @@ body {
             }
         }
 
+        //Esta parte es para la pagina de "Proximamente"
+
+        .centerMain {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+
+        .svgContainer {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            .svg {
+                width: 600px;
+                height: 600px;
+            }
+        }
+
+        .btnContainer {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            .btn {
+                font-size: 1.2rem;
+                padding: 12.8px 24px;
+                border-radius: 6px;
+                margin-right: 20px;
+                @include boton-claro;
+
+            }
+        }
     }
 
     footer {
