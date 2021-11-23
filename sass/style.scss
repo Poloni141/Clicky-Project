@@ -35,6 +35,11 @@
 
 body {
     background-color: $bg-gris;
+    
+    h1 {
+        color: #fff;
+        font-family: 'Montserrat alternates';
+    }
 
     a {
         font-size: 1rem;
@@ -51,138 +56,24 @@ body {
     }
 
     .header {
-        background-color: $bg-blanco;
-        z-index: 10;
-        width: 100%;
-        height: 80px;
+        .nav-brand {
+            color: $bg-principal;
+        }
 
-        .header__nav {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            height: 100%;
-
-            .header__container {
-                display: flex;
-                justify-content: start;
-                align-items: center;
-                height: 100%;
-
-                .header__menuBtn {
-                    display: none;
-                    margin-left: 20px;
-                    .fa-bars {
-                        color: $bg-principal;
-                    }
-
-                    @media only screen and (max-width: $breakpoint-tablet) {
-                        display: block;
-                    }
-
-                    @media only screen and (max-width: $breakpoint-mobile) {
-                        display: block;
-                    }
-                }
-
-                .header__title {
-                    font-size: 2.5rem;
-                    color: $bg-principal;
-                    font-family: 'Montserrat Alternates', sans-serif;
-                    margin: 0 0 0 32px;
-                    cursor: default;
-
-                    @media only screen and (max-width: $breakpoint-tablet){
-                        margin-left: 25px;
-                    }
-
-                    @media only screen and (max-width: $breakpoint-mobile) {
-                        margin-left: 25px;
-                    }
-                }
-
-                .header__listaPrincipal {
-                    padding: 0;
-                    margin-bottom: 0;  
-
-                    @media only screen and (max-width: $breakpoint-tablet) {
-                        display: none;
-                        width: 0;
-                    }
-
-                    @media only screen and (max-width: $breakpoint-mobile) {
-                        display: none;
-                        width: 0;
-                    }
-                    
-                    .header__seccion {
-                        display: inline-block;
-                        margin-left: 22.4px;
-                        list-style: none;
-                    }
-
-                    .header__seccion-menu {
-                        padding: 30px;
-                        &:hover {
-                            .header__listaSecundaria {
-                                display: flex;
-                                flex-direction: row;
-                                justify-content: space-evenly;
-                            }
-                        }
-
-                        .header__listaSecundaria {
-                            display: none;
-                            position: absolute;
-                            z-index: 5;
-                            width: 100%;
-                            right: 0px;
-                            top: 80px;
-                            background: rgba( 255, 255, 255, 0.55 );
-                            backdrop-filter: blur( 20px );
-                            -webkit-backdrop-filter: blur( 20px );
-                            list-style-type: none;
-                            .header__opcion {
-                                width: 100%;
-                                padding: 24px;
-                                color: black;
-                            }
-                        }
-                    }
-                }
-            }
-
-            .header__registerLogin {
-                margin-right: 32px;
-
-                @media only screen and (max-width: $breakpoint-mobile) {
-                    display: none;
-                }
-
-                .header__loginBtn {
-                    font-size: 0.9rem;
-                    padding: 12.8px 24px;
-                    border-radius: 6px;
-                    margin-right: 20px;
-                    @include boton-claro;
-                }
-
-                .header__registerBtn {
-                    font-size: 0.9rem;
-                    color: $bg-blanco;
-                    padding: 12.8px 24px;
-                    background-color: $bg-principal;
-                    border-radius: 6px;
-                    transition: all 0.3s;
-                    &:hover {
-                        color: $bg-blanco;
-                        background-color: #0338aa;
-                    }
-                }
-            }
+        .btn-outline-primary {
+            margin-left: 20px;
         }
     }
 
     main {
+        .carousel__img {
+            @media only screen and (max-width: $breakpoint-mobile) {
+                height: 200px;
+            }
+        }
+
+        position: relative;
+        top: 83px;
         .categories {
             display: flex;
             flex-direction: column;
@@ -193,7 +84,6 @@ body {
                 margin: 32px 0;
                 width: 97%;
                 height: 251.6px;
-                
                 border-radius: 6px;
                 background-color: $bg-blanco;
                 display: flex;
@@ -208,7 +98,7 @@ body {
 
                 @media only screen and (max-width: $breakpoint-mobile) {
                     width: 90%;
-                    height: 630px;
+                    height: 670px;
                     flex-direction: column;
                 }
 
@@ -490,6 +380,10 @@ body {
                             border-radius: 6px;
                             padding: 16px;
                             outline: none;
+                            @media only screen and (max-width: $breakpoint-mobile) {
+                                width: 98%;
+                                
+                            }
                         }
                     }
 
@@ -501,6 +395,9 @@ body {
                             border-radius: 6px;
                             padding: 16px;
                             outline: none;
+                            @media only screen and (max-width: $breakpoint-mobile) {
+                                width: 98%;
+                            }
                         }
                     }
 
@@ -614,8 +511,9 @@ body {
             grid-row-gap: 70px;
 
             @media only screen and (max-width: $breakpoint-desktopM) {
-                grid-template-columns: 1fr 1fr 1fr 1fr ;
-                grid-template-rows: 1fr 1fr 1fr;
+                display: flex;
+                justify-content: space-evenly;
+                flex-flow: row wrap;
             }
 
             @media only screen and (max-width: $breakpoint-tablet) {
@@ -740,6 +638,10 @@ body {
             .svg {
                 width: 600px;
                 height: 600px;
+                @media only screen and (max-width: $breakpoint-mobile) {
+                    width: 200px;
+                    height: 200px;
+                }
             }
         }
 
@@ -762,6 +664,8 @@ body {
         display: block;
         background-color: $bg-secundario;
         width: 100%;
+        position: relative;
+        top: 83px;
 
         .footer__enlacesContainer {
             display: flex;
@@ -834,15 +738,24 @@ body {
     footer i {
         font-size: 1.4rem;
     }
+
+
 }
 
 .carousel-caption h5 {
     font-weight: bold;
     font-size: 2rem;
     color: $bg-blanco;
+    
+    @media only screen and (max-width: $breakpoint-mobile) {
+        font-size: 1rem;
+    }
 }
 
 .carousel-caption p {
     font-size: 1.6rem;
     color: $bg-blanco;
+    @media only screen and (max-width: $breakpoint-mobile) {
+        font-size: 0.6rem;
+    }
 }
